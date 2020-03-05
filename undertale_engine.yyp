@@ -4823,6 +4823,14 @@
             }
         },
         {
+            "Key": "f23eca72-b2dc-4e93-958f-b1ccf06eb9ce",
+            "Value": {
+                "id": "2b13072d-b6cc-418d-9440-858fac093958",
+                "resourcePath": "objects\\battle_enemy_sans\\battle_enemy_sans.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f241e97f-9d09-4a0f-9b18-687739ed9cd8",
             "Value": {
                 "id": "42f7a15f-498d-4deb-a006-61fda2aae89d",
