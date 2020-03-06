@@ -1,4 +1,5 @@
 event_inherited();
+show_debug_message("Enemy Init");
 
 //Test Varibles
 _test = true;
@@ -10,8 +11,8 @@ _head_sprite = spr_enemy_sans_head_blink;
 _head_x = 0;
 _head_y = 0;
 _head_image = 0; 
-_head_speed = 0;
 _head_blink = true;
+_blink_not_started = true;
 
 // Body Variables
 _body_init_x = 0;
@@ -32,7 +33,7 @@ _tail_y = 0;
 _tail_angel = 0;
 
 // Swing Variables
-_swing = false;
+_swing = true;
 _swing_sine = 0;
 
 // State Machine Variables

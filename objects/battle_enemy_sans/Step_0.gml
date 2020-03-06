@@ -38,10 +38,25 @@ if (_body_image >= body_number)
 if (_swing)
 {
 	_swing_sine = _swing_sine + 1;
-	_head_y = sin(_swing_sine);
-	_body_y = sin(_swing_sine);
+	_head_y = sin(_swing_sine * 0.1) * 0.5;
+	_body_y = sin(_swing_sine * 0.1) * 1.5;
 }else{
 	_swing_sine = 0;
+}
+
+// Handle Eyes Blink
+if (_head_blink && _blink_not_started)
+{
+	_blink_not_started = false;
+	alarm[0] = 1;
+}
+if (!_head_blink)
+{
+	_blink_not_started = true;
+	_head_image = 0;
+	alarm[0] = -1;
+	alarm[1] = -1;
+	alarm[2] = -1;
 }
 
 //Handle Variables Display
