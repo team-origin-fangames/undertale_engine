@@ -1,6 +1,4 @@
 event_inherited();
-show_debug_message("Enemy Init");
-
 //Test Varibles
 _test = true;
 
@@ -21,8 +19,12 @@ _body_sprite = spr_enemy_sans_body;
 _body_x = 0;
 _body_y = 0;
 _body_image = 0;
-_body_speed = 0;
+_body_speed = 0.06;
 _body_loop = true;
+
+// Legs Variables
+_legs_image = 0;
+_legs_speed = 0;
 
 // Tail Varibles
 _tail_init_x = 0;

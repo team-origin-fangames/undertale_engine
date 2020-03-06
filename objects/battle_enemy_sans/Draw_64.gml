@@ -14,5 +14,7 @@ if ( _test)
 	draw_text(10, 160, "Tail X: " + string(_tail_x));
 	draw_text(10, 175, "Tail Y: " + string(_tail_y));
 	draw_text(10, 190, "Tail Angel: " + string(_tail_angel));
-	draw_text(10, 205, "Press \"T\" to Hide.");
+	draw_text(10, 205, "State: " + string(state));
+	draw_text(10, 220, "State Step: " + string(_state_step));
+	draw_text(10, 235, "Press \"T\" to Hide.");
 }	
