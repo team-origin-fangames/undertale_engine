@@ -1114,7 +1114,7 @@
             "Key": "336ce912-8c8b-469f-a960-4a56d7ae701f",
             "Value": {
                 "id": "79bd6c59-d060-4776-b4f5-ec39e8e39db3",
-                "resourcePath": "sprites\\spr_enemy_sans_head\\spr_enemy_sans_head.yy",
+                "resourcePath": "sprites\\spr_enemy_sans_head_blink\\spr_enemy_sans_head_blink.yy",
                 "resourceType": "GMSprite"
             }
         },
