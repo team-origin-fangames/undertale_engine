@@ -47,5 +47,5 @@ enum SANS_STATE{
 	UP,
 	DOWN
 }
-state = SANS_STATE.IDLE;
-_state_step = 1;
+state = SANS_STATE.STATIC;
+_state_step = 2;

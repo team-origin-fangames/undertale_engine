@@ -1,4 +1,4 @@
-// Handle State Machine
+ // Handle State Machine
 switch (state)
 {
 	case SANS_STATE.STATIC:
