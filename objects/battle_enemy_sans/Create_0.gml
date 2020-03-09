@@ -4,7 +4,7 @@ _test = true;
 
 // Head Variables
 _head_init_x = 0;
-_head_init_y = -40;
+_head_init_y = -41;
 _head_sprite = spr_enemy_sans_head_blink;
 _head_x = 0;
 _head_y = 0;
@@ -14,8 +14,8 @@ _blink_not_started = true;
 
 // Body Variables
 _body_init_x = 0;
-_body_init_y = -52;
-_body_sprite = spr_enemy_sans_body;
+_body_init_y = -51;
+_body_sprite = spr_enemy_sans_body_swing;
 _body_x = 0;
 _body_y = 0;
 _body_image = 0;
@@ -45,7 +45,9 @@ enum SANS_STATE{
 	LEFT,
 	RIGHT,
 	UP,
-	DOWN
+	DOWN,
+	MISS,
+	ATTACK
 }
 state = SANS_STATE.STATIC;
-_state_step = 2;
+_state_step = 0;

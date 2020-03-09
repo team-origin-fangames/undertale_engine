@@ -2,54 +2,183 @@
 switch (state)
 {
 	case SANS_STATE.STATIC:
-	if (_state_step != 1)
-	{
-		_head_sprite = spr_enemy_sans_head_blink;
-		_head_x = 0;
-		_head_y = 0;
-		_head_image = 0;
-		_head_blink = false;
-		_body_sprite = spr_enemy_sans_body;
-		_body_x = 0;
-		_body_y = 0;
-		_body_image = 0;
-		_body_speed = 0;
-		_body_loop = true;
-		_swing = false;
-		_state_step = 1;
-	}
-	break;
-	
+		if (_state_step != 1)
+		{
+			_head_sprite = spr_enemy_sans_head_blink;
+			_head_x = 0;
+			_head_y = 0;
+			_head_image = 0;
+			_head_blink = false;
+			_body_sprite = spr_enemy_sans_body_swing;
+			_body_x = 0;
+			_body_y = 0;
+			_body_image = 0;
+			_body_speed = 0;
+			_body_loop = true;
+			_tail_x = 0;
+			_tail_y = 0;
+			_tail_angel = 0;
+			_swing = false;
+			_state_step = 1;
+		}
+		break;
+
 	case SANS_STATE.IDLE:
-	if (_state_step != 1)
-	{
-		_head_sprite = spr_enemy_sans_head_blink;
-		_head_x = 0;
-		_head_y = 0;
-		_head_image = 0;
-		_head_blink = true;
-		_body_sprite = spr_enemy_sans_body;
-		_body_x = 0;
-		_body_y = 0;
-		_body_image = 0;
-		_body_speed = 0.06;
-		_body_loop = true;
-		_swing = true;
-		_state_step = 1;
-	}
-	break;
-	
+		if (_state_step != 1)
+		{
+			_head_sprite = spr_enemy_sans_head_blink;
+			_head_x = 0;
+			_head_y = 0;
+			_head_image = 0;
+			_head_blink = true;
+			_body_sprite = spr_enemy_sans_body_swing;
+			_body_x = 0;
+			_body_y = 0;
+			_body_image = 0;
+			_body_speed = 0.06;
+			_body_loop = true;
+			_swing = true;
+			_state_step = 1;
+		}
+		break;
+
 	case SANS_STATE.LEFT:
-	break;
+		if (_state_step <= 4)
+		{
+			switch (_state_step)
+			{
+				case 0:
+					_head_sprite = spr_enemy_sans_head_blink;
+					_head_x = 0;
+					_head_y = 0;
+					_head_image = 0;
+					_head_blink = false;
+					_body_sprite = spr_enemy_sans_body_left;
+					_body_x = 0;
+					_body_y = 0;
+					_body_image = 0;
+					_body_speed = 0;
+					_body_loop = false;
+					_swing = false;
+					break;
+
+				case 1:
+					_body_x = 3;
+					break;
+
+				case 2:
+					_body_x = 4;
+					break;
+
+				case 3:
+					_body_x = -1;
+					_body_speed = 0.25;
+					break;
+
+				case 4:
+					_body_x = 0;
+					_body_speed = 0.15;
+					break;
+			}
+			_state_step += 0.25;
+		}
+		break;
 	
 	case SANS_STATE.RIGHT:
-	break;
+		if (_state_step <= 4)
+		{
+			switch (_state_step)
+			{
+				case 0:
+					_head_sprite = spr_enemy_sans_head_blink;
+					_head_x = 0;
+					_head_y = 0;
+					_head_image = 0;
+					_head_blink = false;
+					_body_sprite = spr_enemy_sans_body_right;
+					_body_x = 0;
+					_body_y = 0;
+					_body_image = 0;
+					_body_speed = 0;
+					_body_loop = false;
+					_swing = false;
+					break;
+
+				case 1:
+					_body_x = -3;
+					break;
+
+				case 2:
+					_body_x = -4;
+					break;
+
+				case 3:
+					_body_x = 1;
+					_body_speed = 0.25;
+					break;
+
+				case 4:
+					_body_x = 0;
+					_body_speed = 0.15;
+					break;
+			}
+			_state_step += 0.25;
+		}
+		break;
 	
 	case SANS_STATE.UP:
-	break;
+		if (_state_step <= 4)
+		{
+			switch (_state_step)
+			{
+				case 0:
+					_head_sprite = spr_enemy_sans_head_blink;
+					_head_x = 0;
+					_head_y = 0;
+					_head_image = 0;
+					_head_blink = false;
+					_body_sprite = spr_enemy_sans_body_up;
+					_body_x = 0;
+					_body_y = 0;
+					_body_image = 0;
+					_body_speed = 0;
+					_body_loop = false;
+					_swing = false;
+					break;
+
+				case 1:
+					_body_y = 3;
+					break;
+
+				case 2:
+					_head_y = 1;
+					_body_y = 4;
+					break;
+
+				case 3:
+					_head_y = -1;
+					_body_y = -1;
+					_body_speed = 0.2;
+					break;
+
+				case 4:
+					_head_y = 0;
+					_body_y = 0;
+					_body_speed = 0.15;
+					break;
+			}
+			_state_step += 0.2;
+		}
+		break;
 	
 	case SANS_STATE.DOWN:
-	break;
+		break;
+		
+	case SANS_STATE.MISS:
+		break;
+		
+	case SANS_STATE.ATTACK:
+		break;
 }
 
 // Handle Body Animation Loop
@@ -98,7 +227,7 @@ if (!_head_blink)
 	alarm[2] = -1;
 }
 
-//Handle Variables Display
+//Handle Test Functions
 if (keyboard_check_pressed(ord("T")))
 {
 	if (_test)
@@ -107,6 +236,36 @@ if (keyboard_check_pressed(ord("T")))
 	}else{
 		_test = true;
 	}
+}
+
+if (keyboard_check_pressed(ord("1")))
+{
+	Sans_SetState(SANS_STATE.STATIC);
+}
+
+if (keyboard_check_pressed(ord("2")))
+{
+	Sans_SetState(SANS_STATE.IDLE);
+}
+
+if (keyboard_check_pressed(ord("3")))
+{
+	Sans_SetState(SANS_STATE.LEFT);
+}
+
+if (keyboard_check_pressed(ord("4")))
+{
+	Sans_SetState(SANS_STATE.RIGHT);
+}
+
+if (keyboard_check_pressed(ord("5")))
+{
+	Sans_SetState(SANS_STATE.UP);
+}
+
+if (keyboard_check_pressed(ord("6")))
+{
+	Sans_SetState(SANS_STATE.DOWN);
 }
 	
 	
