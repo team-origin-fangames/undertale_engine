@@ -1,4 +1,3 @@
-/// @desc Varibles Display 
 if ( _test)
 {
 	draw_text(10, 10, "Head Sprite: " + string(_head_sprite));

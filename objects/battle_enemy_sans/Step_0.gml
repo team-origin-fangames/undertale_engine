@@ -64,19 +64,27 @@ switch (state)
 
 				case 1:
 					_body_x = 3;
+					_tail_x = 3;
+					_tail_angel = -1;
 					break;
 
 				case 2:
 					_body_x = 4;
+					_tail_x = 4;
+					_tail_angel = -2;
 					break;
 
 				case 3:
 					_body_x = -1;
+					_tail_x = 1;
+					_tail_angel = 1;
 					_body_speed = 0.25;
 					break;
 
 				case 4:
 					_body_x = 0;
+					_tail_x = 0;
+					_tail_angel = -1;
 					_body_speed = 0.15;
 					break;
 			}
@@ -106,19 +114,27 @@ switch (state)
 
 				case 1:
 					_body_x = -3;
+					_tail_x = -3;
+					_tail_angel = -1;
 					break;
 
 				case 2:
 					_body_x = -4;
+					_tail_x = -4;
+					_tail_angel = -2;
 					break;
 
 				case 3:
 					_body_x = 1;
+					_tail_x = 1;
+					_tail_angel = 1;
 					_body_speed = 0.25;
 					break;
 
 				case 4:
 					_body_x = 0;
+					_tail_x = 0;
+					_tail_angel = -1;
 					_body_speed = 0.15;
 					break;
 			}
@@ -148,22 +164,30 @@ switch (state)
 
 				case 1:
 					_body_y = 3;
+					_tail_y = 3;
+					_tail_angel = 1;
 					break;
 
 				case 2:
 					_head_y = 1;
 					_body_y = 4;
+					_tail_y = 4;
+					_tail_angel = 2;
 					break;
 
 				case 3:
 					_head_y = -1;
 					_body_y = -1;
+					_tail_y = -1;
+					_tail_angel = -1;
 					_body_speed = 0.2;
 					break;
 
 				case 4:
 					_head_y = 0;
 					_body_y = 0;
+					_tail_y = 0;
+					_tail_angel = 1;
 					_body_speed = 0.15;
 					break;
 			}
@@ -172,9 +196,78 @@ switch (state)
 		break;
 	
 	case SANS_STATE.DOWN:
+		if (_state_step <= 4)
+		{
+			switch (_state_step)
+			{
+				case 0:
+					_head_sprite = spr_enemy_sans_head_blink;
+					_head_x = 0;
+					_head_y = 0;
+					_head_image = 0;
+					_head_blink = false;
+					_body_sprite = spr_enemy_sans_body_down;
+					_body_x = 0;
+					_body_y = 0;
+					_body_image = 0;
+					_body_speed = 0;
+					_body_loop = false;
+					_swing = false;
+					break;
+
+				case 1:
+					_body_y = -3;
+					_tail_y = -3;
+					_tail_angel = -1;
+					break;
+
+				case 2:
+					_head_y = -1;
+					_body_y = -4;
+					_tail_y = -4;
+					_tail_angel = -2;
+					break;
+
+				case 3:
+					_head_y = 1;
+					_body_y = 1;
+					_tail_y = 1;
+					_tail_angel = 1;
+					_body_speed = 0.2;
+					break;
+
+				case 4:
+					_head_y = 0;
+					_body_y = 0;
+					_tail_y = 0;
+					_tail_angel = -1;
+					_body_speed = 0.15;
+					break;
+			}
+			_state_step += 0.2;
+		}
 		break;
 		
 	case SANS_STATE.MISS:
+		if (_state_step != 1)
+		{
+			_head_sprite = spr_enemy_sans_head_blink;
+			_head_x = 0;
+			_head_y = 0;
+			_head_image = 1;
+			_head_blink = false;
+			_body_sprite = spr_enemy_sans_body_miss;
+			_body_x = 0;
+			_body_y = 0;
+			_body_image = 0;
+			_body_speed = 0;
+			_body_loop = true;
+			_tail_x = 0;
+			_tail_y = 0;
+			_tail_angel = 0;
+			_swing = false;
+			_state_step = 1;
+		}
 		break;
 		
 	case SANS_STATE.ATTACK:
@@ -238,36 +331,44 @@ if (keyboard_check_pressed(ord("T")))
 	}
 }
 
-if (keyboard_check_pressed(ord("1")))
+if (_test) 
 {
-	Sans_SetState(SANS_STATE.STATIC);
+	if (keyboard_check_pressed(ord("1")))
+	{
+		Sans_SetState(SANS_STATE.STATIC);
+	}
+
+	if (keyboard_check_pressed(ord("2")))
+	{
+		Sans_SetState(SANS_STATE.IDLE);
+	}
+
+	if (keyboard_check_pressed(ord("3")))
+	{
+		Sans_SetState(SANS_STATE.LEFT);
+	}
+
+	if (keyboard_check_pressed(ord("4")))
+	{
+		Sans_SetState(SANS_STATE.RIGHT);
+	}
+
+	if (keyboard_check_pressed(ord("5")))
+	{
+		Sans_SetState(SANS_STATE.UP);
+	}
+
+	if (keyboard_check_pressed(ord("6")))
+	{
+		Sans_SetState(SANS_STATE.DOWN);
+	}
+
+	if (keyboard_check_pressed(ord("7")))
+	{
+		Sans_SetState(SANS_STATE.MISS);
+	}
 }
 
-if (keyboard_check_pressed(ord("2")))
-{
-	Sans_SetState(SANS_STATE.IDLE);
-}
-
-if (keyboard_check_pressed(ord("3")))
-{
-	Sans_SetState(SANS_STATE.LEFT);
-}
-
-if (keyboard_check_pressed(ord("4")))
-{
-	Sans_SetState(SANS_STATE.RIGHT);
-}
-
-if (keyboard_check_pressed(ord("5")))
-{
-	Sans_SetState(SANS_STATE.UP);
-}
-
-if (keyboard_check_pressed(ord("6")))
-{
-	Sans_SetState(SANS_STATE.DOWN);
-}
-	
 	
 	
 	
