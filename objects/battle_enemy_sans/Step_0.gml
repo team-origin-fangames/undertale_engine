@@ -271,6 +271,7 @@ switch (state)
 		break;
 		
 	case SANS_STATE.ATTACK:
+	// TODO
 		break;
 }
 

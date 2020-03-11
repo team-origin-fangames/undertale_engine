@@ -49,5 +49,5 @@ enum SANS_STATE{
 	MISS,
 	ATTACK
 }
-state = SANS_STATE.STATIC;
+state = SANS_STATE.IDLE;
 _state_step = 0;
