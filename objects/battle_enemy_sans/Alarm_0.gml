@@ -1,2 +1,2 @@
-_head_image = 1;
+face_enemy_sans.emotion = 1;
 alarm[1] = 8;

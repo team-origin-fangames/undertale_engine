@@ -3,7 +3,7 @@ event_inherited();
 // Head Variables
 _head_init_x = 0;
 _head_init_y = -41;
-_head_sprite = spr_enemy_sans_head_blink;
+_head_sprite = spr_enemy_sans_head;
 _head_x = 0;
 _head_y = 0;
 _head_image = 0; 
@@ -58,4 +58,8 @@ _fight_state = FIGHT_STATE.NORMAL;
 // Turn Variables
 _turn_list = ds_list_create();
 ds_list_add(_turn_list, battle_turn_sans_0);
-_turn = -1;
+_turn = 0;
+
+// Emotion Object Create
+var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
+inst.face_id = 0;

@@ -4,10 +4,9 @@ switch (_state)
 	case SANS_STATE.STATIC:
 		if (_state_step != 1)
 		{
-			_head_sprite = spr_enemy_sans_head_blink;
 			_head_x = 0;
 			_head_y = 0;
-			_head_image = 0;
+			face_enemy_sans.emotion = 0;
 			_head_blink = false;
 			_body_sprite = spr_enemy_sans_body_swing;
 			_body_x = 0;
@@ -26,10 +25,9 @@ switch (_state)
 	case SANS_STATE.IDLE:
 		if (_state_step != 1)
 		{
-			_head_sprite = spr_enemy_sans_head_blink;
 			_head_x = 0;
 			_head_y = 0;
-			_head_image = 0;
+			face_enemy_sans.emotion = 0;
 			_head_blink = true;
 			_body_sprite = spr_enemy_sans_body_swing;
 			_body_x = 0;
@@ -48,7 +46,6 @@ switch (_state)
 			switch (_state_step)
 			{
 				case 0:
-					_head_sprite = spr_enemy_sans_head_blink;
 					_head_x = 0;
 					_head_y = 0;
 					_head_image = 0;
@@ -98,10 +95,9 @@ switch (_state)
 			switch (_state_step)
 			{
 				case 0:
-					_head_sprite = spr_enemy_sans_head_blink;
 					_head_x = 0;
 					_head_y = 0;
-					_head_image = 0;
+					face_enemy_sans.emotion = 0;
 					_head_blink = false;
 					_body_sprite = spr_enemy_sans_body_right;
 					_body_x = 0;
@@ -148,10 +144,9 @@ switch (_state)
 			switch (_state_step)
 			{
 				case 0:
-					_head_sprite = spr_enemy_sans_head_blink;
 					_head_x = 0;
 					_head_y = 0;
-					_head_image = 0;
+					face_enemy_sans.emotion = 0;
 					_head_blink = false;
 					_body_sprite = spr_enemy_sans_body_up;
 					_body_x = 0;
@@ -201,10 +196,9 @@ switch (_state)
 			switch (_state_step)
 			{
 				case 0:
-					_head_sprite = spr_enemy_sans_head_blink;
 					_head_x = 0;
 					_head_y = 0;
-					_head_image = 0;
+					face_enemy_sans.emotion = 0;
 					_head_blink = false;
 					_body_sprite = spr_enemy_sans_body_down;
 					_body_x = 0;
@@ -248,28 +242,6 @@ switch (_state)
 		}
 		break;
 		
-	case SANS_STATE.MISS:
-		if (_state_step != 1)
-		{
-			_head_sprite = spr_enemy_sans_head_blink;
-			_head_x = 0;
-			_head_y = 0;
-			_head_image = 1;
-			_head_blink = false;
-			_body_sprite = spr_enemy_sans_body_miss;
-			_body_x = 0;
-			_body_y = 0;
-			_body_image = 0;
-			_body_speed = 0;
-			_body_loop = true;
-			_tail_x = 0;
-			_tail_y = 0;
-			_tail_angel = 0;
-			_swing = false;
-			_state_step = 1;
-		}
-		break;
-		
 	case SANS_STATE.ATTACK:
 	// TODO
 		break;
@@ -310,8 +282,20 @@ if (_head_blink && _blink_not_started)
 if (!_head_blink)
 {
 	_blink_not_started = true;
-	_head_image = 0;
+	face_enemy_sans.emotion = 0;
 	alarm[0] = -1;
 	alarm[1] = -1;
 	alarm[2] = -1;
+}
+
+// Always Stand on Board
+y = battle_board.y - battle_board.up - battle_board.thickness_frame - 4;
+
+//Handle Emotion
+_head_image = face_enemy_sans.emotion;
+
+if (keyboard_check(ord("2")))
+{
+	_state = SANS_STATE.LEFT;
+	_state_step = 0;
 }
