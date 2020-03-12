@@ -1,6 +1,4 @@
 event_inherited();
-//Test Varibles
-_test = true;
 
 // Head Variables
 _head_init_x = 0;
@@ -22,10 +20,6 @@ _body_image = 0;
 _body_speed = 0.06;
 _body_loop = true;
 
-// Legs Variables
-_legs_image = 0;
-_legs_speed = 0;
-
 // Tail Varibles
 _tail_init_x = 0;
 _tail_init_y = -39;
@@ -39,7 +33,8 @@ _swing = true;
 _swing_sine = 0;
 
 // State Machine Variables
-enum SANS_STATE{
+enum SANS_STATE
+{
 	STATIC,
 	IDLE,
 	LEFT,
@@ -49,5 +44,18 @@ enum SANS_STATE{
 	MISS,
 	ATTACK
 }
-state = SANS_STATE.IDLE;
+_state = SANS_STATE.IDLE;
 _state_step = 0;
+
+enum FIGHT_STATE
+{
+	NORMAL,
+	PAUSED,
+	SPARED
+}
+_fight_state = FIGHT_STATE.NORMAL;
+
+// Turn Variables
+_turn_list = ds_list_create();
+ds_list_add(_turn_list, battle_turn_sans_0);
+_turn = -1;

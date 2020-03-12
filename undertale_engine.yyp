@@ -3343,6 +3343,14 @@
             }
         },
         {
+            "Key": "a2fa8489-9a4d-4678-9ff7-5ef334cd492a",
+            "Value": {
+                "id": "91a2496c-bcee-4f7c-9e8f-3320667c3c2c",
+                "resourcePath": "objects\\battle_turn_sans_0\\battle_turn_sans_0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a47af869-15f1-4796-b64f-bbec8c2bf877",
             "Value": {
                 "id": "ec281b04-ada1-488b-9afa-c733a8db2150",

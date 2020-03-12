@@ -1,0 +1,1 @@
+battle_enemy_sans._body_sprite = spr_enemy_sans_head_blink;

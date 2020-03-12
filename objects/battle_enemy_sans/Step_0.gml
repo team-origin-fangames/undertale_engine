@@ -1,5 +1,5 @@
  // Handle State Machine
-switch (state)
+switch (_state)
 {
 	case SANS_STATE.STATIC:
 		if (_state_step != 1)
@@ -289,11 +289,6 @@ if (_body_image >= body_number)
 	}
 }
 
-//Handle Legs Animation
-/*var legs_number = sprite_get_number(spr_enemy_sans_legs);
-_legs_image = _legs_image + _legs_speed;
-if (_legs_image >= legs_number) _legs_image = 0;*/
-
 //Handle Character Swings
 if (_swing)
 {
@@ -320,61 +315,3 @@ if (!_head_blink)
 	alarm[1] = -1;
 	alarm[2] = -1;
 }
-
-//Handle Test Functions
-if (keyboard_check_pressed(ord("T")))
-{
-	if (_test)
-	{
-		_test = false;
-	}else{
-		_test = true;
-	}
-}
-
-if (_test) 
-{
-	if (keyboard_check_pressed(ord("1")))
-	{
-		Sans_SetState(SANS_STATE.STATIC);
-	}
-
-	if (keyboard_check_pressed(ord("2")))
-	{
-		Sans_SetState(SANS_STATE.IDLE);
-	}
-
-	if (keyboard_check_pressed(ord("3")))
-	{
-		Sans_SetState(SANS_STATE.LEFT);
-	}
-
-	if (keyboard_check_pressed(ord("4")))
-	{
-		Sans_SetState(SANS_STATE.RIGHT);
-	}
-
-	if (keyboard_check_pressed(ord("5")))
-	{
-		Sans_SetState(SANS_STATE.UP);
-	}
-
-	if (keyboard_check_pressed(ord("6")))
-	{
-		Sans_SetState(SANS_STATE.DOWN);
-	}
-
-	if (keyboard_check_pressed(ord("7")))
-	{
-		Sans_SetState(SANS_STATE.MISS);
-	}
-}
-
-	
-	
-	
-	
-	
-	
-	
-	
