@@ -293,9 +293,3 @@ y = battle_board.y - battle_board.up - battle_board.thickness_frame - 4;
 
 //Handle Emotion
 _head_image = face_enemy_sans.emotion;
-
-if (keyboard_check(ord("2")))
-{
-	_state = SANS_STATE.LEFT;
-	_state_step = 0;
-}

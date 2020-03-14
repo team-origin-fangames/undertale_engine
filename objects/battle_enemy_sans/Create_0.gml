@@ -1,4 +1,9 @@
 event_inherited();
+// Player Settings
+Player_SetName("Lasa");
+Player_SetLv(19);
+Player_SetHp(92);
+Player_SetHpMax(92);
 
 // Head Variables
 _head_init_x = 0;
@@ -41,7 +46,6 @@ enum SANS_STATE
 	RIGHT,
 	UP,
 	DOWN,
-	MISS,
 	ATTACK
 }
 _state = SANS_STATE.IDLE;
