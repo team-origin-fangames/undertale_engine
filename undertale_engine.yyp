@@ -1383,6 +1383,14 @@
             }
         },
         {
+            "Key": "4185ea1f-1b17-4037-966c-001ec526646a",
+            "Value": {
+                "id": "ae03c75d-46a9-49bc-aacf-a7b1b7cdbcfb",
+                "resourcePath": "objects\\battle_bullet_bone\\battle_bullet_bone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "418bf160-cb8d-4ddd-a9da-063e73ac922f",
             "Value": {
                 "id": "03ca6d6f-c999-4eb3-b5b7-64588f385dca",
@@ -2567,6 +2575,14 @@
             }
         },
         {
+            "Key": "7f16f518-0472-4889-8315-1d011aea32e6",
+            "Value": {
+                "id": "41d23285-4583-4f9e-9060-aae75d5eff14",
+                "resourcePath": "objects\\battle_bullet_gb_beam\\battle_bullet_gb_beam.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7f65c127-f498-4b14-b4ad-e0ae7c278940",
             "Value": {
                 "id": "c89e2c2c-42cf-421d-a690-88ea65d1bba8",
@@ -3108,6 +3124,14 @@
                 "id": "f4a7ca04-fe2c-463e-a586-d18461ce9e0b",
                 "resourcePath": "views\\95e88a7d-3f65-4bcc-baa0-d5071629656a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "96623b87-8fbf-4786-b8cb-283db221cdde",
+            "Value": {
+                "id": "d7932869-08e5-4ced-b783-68bdb6c2d282",
+                "resourcePath": "objects\\battle_bullet_gb\\battle_bullet_gb.yy",
+                "resourceType": "GMObject"
             }
         },
         {
