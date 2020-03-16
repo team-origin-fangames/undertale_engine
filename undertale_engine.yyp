@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "245c350b-b7e6-4ab6-8d76-205fba082d60",
+            "Value": {
+                "id": "61f0d211-0db3-4b38-b114-d5490cedfaaa",
+                "resourcePath": "scripts\\Player_GetHit\\Player_GetHit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "24601f7a-18ea-4576-9529-830dc2eda24a",
             "Value": {
                 "id": "d9e2e68f-167c-40a3-8dfb-edce0ce68463",
@@ -1948,6 +1956,14 @@
                 "id": "ce6fb0da-b2e8-4a84-82d2-329ca3f169c2",
                 "resourcePath": "objects\\battle_soul_red\\battle_soul_red.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5d16f0c8-65c8-4d44-95d0-fc50b2361e72",
+            "Value": {
+                "id": "0d009a77-1701-4bd9-8d92-662c4e843fd4",
+                "resourcePath": "views\\5d16f0c8-65c8-4d44-95d0-fc50b2361e72.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4143,6 +4159,14 @@
             }
         },
         {
+            "Key": "c99ac837-601c-4842-bc94-0a68b082a9cb",
+            "Value": {
+                "id": "ee25081e-e6ee-4582-a4a4-a6cd18caf62a",
+                "resourcePath": "scripts\\Battle_UpdateDifficulty\\Battle_UpdateDifficulty.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c9e9fb6d-12df-4733-bd17-9ac5b0113421",
             "Value": {
                 "id": "cad25198-3691-4dc5-a4d7-700b5bc019cb",
@@ -4567,6 +4591,14 @@
             }
         },
         {
+            "Key": "de18558a-c3ee-46f4-bebd-62410930ec27",
+            "Value": {
+                "id": "3c6ae0a3-6643-40ae-81e7-85e374813ec7",
+                "resourcePath": "scripts\\Battle_GetDifficulty\\Battle_GetDifficulty.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de8ed562-d856-4441-868f-475ed1d354dd",
             "Value": {
                 "id": "87c23dbf-1546-4bc8-9887-5ea54cde4444",
@@ -4975,6 +5007,14 @@
             }
         },
         {
+            "Key": "f11b201b-928d-4871-8a85-03751db0010f",
+            "Value": {
+                "id": "580707f4-3d3d-4a83-b7c2-72ef230602f3",
+                "resourcePath": "scripts\\Player_SetHit\\Player_SetHit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1219eeb-1723-4d00-8cd0-2f8d84e1bd01",
             "Value": {
                 "id": "c4b4c748-02e3-428a-aebd-f3c11e17e106",
@@ -5020,6 +5060,14 @@
                 "id": "42f7a15f-498d-4deb-a006-61fda2aae89d",
                 "resourcePath": "sprites\\spr_battle_dialog_enemy_spike\\spr_battle_dialog_enemy_spike.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f2b0beac-c230-4470-af80-37aeee5b6c57",
+            "Value": {
+                "id": "01595f01-f118-49f8-97f2-be8044ac0fb5",
+                "resourcePath": "scripts\\Battle_SetDifficulty\\Battle_SetDifficulty.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5388,6 +5436,9 @@
         "39b59259-caee-4299-8d3e-38ef2dd4ffc9",
         "2860a9f0-935b-41fb-91e2-b4c124c34edf",
         "e01eb94e-f235-4b4d-aa5b-44f7d02e719d",
+        "de18558a-c3ee-46f4-bebd-62410930ec27",
+        "f2b0beac-c230-4470-af80-37aeee5b6c57",
+        "c99ac837-601c-4842-bc94-0a68b082a9cb",
         "e526640a-919f-4e19-8ec3-a70d0936e485",
         "e78f6959-d050-41cd-9dc1-f56ddc90f64b",
         "78fcf92f-89da-4a1d-b117-1e443277558b",
@@ -5549,6 +5600,8 @@
         "d6528e52-b252-4e7f-b035-3f4f8d18f93e",
         "78eb2428-ffd4-4cbd-95c5-3921bf9e2964",
         "07f5542b-95fb-496b-a098-b421ca5dd453",
+        "245c350b-b7e6-4ab6-8d76-205fba082d60",
+        "f11b201b-928d-4871-8a85-03751db0010f",
         "9f8cca73-7064-4df7-a0d9-183eb8469fd9",
         "73f3215e-7994-434d-b78f-77ff4f280a80",
         "c1099f20-0cfa-4dfd-9b77-8af3d002680f",

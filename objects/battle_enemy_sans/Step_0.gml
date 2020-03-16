@@ -293,3 +293,5 @@ y = battle_board.y - battle_board.up - battle_board.thickness_frame - 4;
 
 //Handle Emotion
 _head_image = face_enemy_sans.emotion;
+
+//Handle Difficulty System
