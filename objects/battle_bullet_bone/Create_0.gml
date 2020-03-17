@@ -1,6 +1,6 @@
 event_inherited();
 
-_type = BULLET_TYPE.NORMAL;
+_type = BATTLE_BULLET_TYPE.NORMAL;
 _length  = 60;
 _direction = 90;
 _outside = false;

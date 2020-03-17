@@ -67,11 +67,3 @@ _turn = 0;
 // Emotion Object Create
 var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
 inst.face_id = 0;
-
-//bullet Variables
-enum BULLET_TYPE
-{
-	NORMAL,
-	BLUE,
-	ORANGE
-}

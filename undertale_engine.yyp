@@ -1215,6 +1215,14 @@
             }
         },
         {
+            "Key": "36c46736-e060-4e8c-80e6-bbe71953769d",
+            "Value": {
+                "id": "138466ba-a04c-4fcd-91eb-00cc46e65903",
+                "resourcePath": "sounds\\snd_gb_fire_echo\\snd_gb_fire_echo.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "37242df5-5594-4210-bc04-bb5e57d53d76",
             "Value": {
                 "id": "a9e9bc21-dfc5-44ff-9088-81c427a3582f",

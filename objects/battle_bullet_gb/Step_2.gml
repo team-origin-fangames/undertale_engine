@@ -5,7 +5,7 @@ _inst.image_angle = image_angle;
 
 if (_beam_scale > 1.2 && _beam_alpha > 0.8)
 {
-	_inst.image_xscale = _scale_y * _beam_collision_scale * 720;
+	_inst.image_xscale = _scale_y * _beam_collision_scale * 999;
 	_inst.image_yscale = _scale_y * _beam_collision_scale;
 } else {
 	_inst.image_xscale = 0;

@@ -1,4 +1,4 @@
-if (_beam_alpha == 0)
+ if (_beam_alpha == 0)
 {
 	instance_destroy();
 }
