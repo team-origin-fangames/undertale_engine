@@ -2639,6 +2639,14 @@
             }
         },
         {
+            "Key": "7f9ac8d7-74ff-4413-9440-5df72e12bd1a",
+            "Value": {
+                "id": "2043b153-4f04-42e8-acc8-58bc69c41f43",
+                "resourcePath": "objects\\battle_soul_yellow\\battle_soul_yellow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7fc67b4a-355e-4a64-9f19-8deab865adc5",
             "Value": {
                 "id": "d01a1c32-a9c1-4388-a708-508d46155205",
@@ -3223,6 +3231,14 @@
             }
         },
         {
+            "Key": "98f2cc52-837a-4d65-ae9c-294632ab9359",
+            "Value": {
+                "id": "99fe75f5-4f79-434d-8084-4b63d994a24b",
+                "resourcePath": "sprites\\spr_battle_soul_yellow\\spr_battle_soul_yellow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "98ff10c5-acd5-4e46-87fe-79e759ea9f2e",
             "Value": {
                 "id": "16e06455-e3be-47b3-aa6c-d3ea5553d987",
@@ -3676,6 +3692,14 @@
                 "id": "80be2c4f-f177-414b-b24e-1365c4f62d8e",
                 "resourcePath": "sounds\\snd_noise\\snd_noise.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "b245d543-313e-4e55-a212-1fa3140fcbe4",
+            "Value": {
+                "id": "1dbc99c3-fd80-432b-8a68-d37338eb25a3",
+                "resourcePath": "objects\\battle_soul_blue\\battle_soul_blue.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5148,6 +5172,14 @@
                 "id": "3a28edbb-e6bc-44be-9deb-d55ae81c4ad4",
                 "resourcePath": "scripts\\Input_Uninit\\Input_Uninit.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f561477d-d672-473c-9d6d-484ee0dffb9a",
+            "Value": {
+                "id": "6e642897-9e30-4372-b4e8-4678c2b0248b",
+                "resourcePath": "sprites\\spr_battle_soul_blue\\spr_battle_soul_blue.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

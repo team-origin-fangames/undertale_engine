@@ -1,8 +1,8 @@
 _type = BATTLE_BULLET_TYPE.NORMAL;
 _x_target = x;
 _y_target = y;
-_angel_start = 0;
-_angel_end = 0;
+_angle_start = 0;
+_angle_end = 0;
 _scale_x = 2;
 _scale_y = 2;
 _time_intro = 25;

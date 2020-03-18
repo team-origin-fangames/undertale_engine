@@ -1,5 +1,5 @@
 image_alpha = 1;
-Anim_Create(id, "image_angel", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, _angel_start, _angel_end - _angel_start, _time_intro);
+Anim_Create(id, "image_angel", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, _angle_start, _angle_end - _angle_start, _time_intro);
 Anim_Create(id, "x", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, x, _x_target - x, _time_intro);
 Anim_Create(id, "y", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, y, _y_target - y, _time_intro);
 
