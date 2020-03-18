@@ -21,67 +21,44 @@ switch (_direction)
 
 if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 {
-	var player_total_speed = Player_GetSpdTotal();
+	var player_speed = Player_GetSpdTotal();
 	if (Input_IsHeld(INPUT.CANCEL))
 	{
-		player_total_speed = player_total_speed / 2;
+		player_speed = player_speed / 2;
 	}
-	var player_speed = player_total_speed;
+
 	switch (_direction)
 	{
 		case DIR.UP:
 		case DIR.DOWN:
-			if  (Input_IsHeld(INPUT.LEFT) && !position_meeting(x - 1, y, block))
+		repeat (player_speed * 10)
+		{
+			if (Input_IsHeld(INPUT.LEFT) && !position_meeting(x - sprite_width / 2, y, block))
 			{
-				if (player_speed < _max_speed)
-				{
-					player_speed = player_speed + _acceleration;
-				}
-				x = x - player_speed;
+				x = x - 0.1;
 			}
-			if  (Input_IsHeld(INPUT.RIGHT) && !position_meeting(x + 1, y, block))
-			{
-				if (player_speed < _max_speed)
-				{
-					player_speed = player_speed + _acceleration;
-				}
-				x = x + player_speed;
-			}
-			if (!Input_IsHeld(INPUT.LEFT) && !Input_IsHeld(INPUT.RIGHT))
-			{
-				if (player_speed - _friction >= player_total_speed)
-				{
-					player_speed = player_speed - _friction;
-				}
-			}
-			break;
 			
+			if (Input_IsHeld(INPUT.RIGHT) && !position_meeting(x + sprite_width / 2, y, block))
+			{
+				x = x + 0.1;
+			}
+		}
+		break;
+		
 		case DIR.LEFT:
 		case DIR.RIGHT:
-			if  (Input_IsHeld(INPUT.UP) && !position_meeting(x, y - 1, block))
+		repeat (player_speed * 10)
+		{
+			if (Input_IsHeld(INPUT.UP) && !position_meeting(x, y - sprite_height / 2, block))
 			{
-				if (player_speed < _max_speed)
-				{
-					player_speed = player_speed + _acceleration;
-				}
-				y = y - player_speed;
+				y = y - 0.1;
 			}
-			if  (Input_IsHeld(INPUT.DOWN) && !position_meeting(x, y + 1, block))
+			if (Input_IsHeld(INPUT.DOWN) && !position_meeting(x, y + sprite_width / 2, block))
 			{
-				if (player_speed < _max_speed)
-				{
-					player_speed = player_speed + _acceleration;
-				}
-				y = y + player_speed;
+				y = y + 0.1;
 			}
-			if (!Input_IsHeld(INPUT.UP) && !Input_IsHeld(INPUT.DOWN))
-			{
-				if (player_speed - _friction >= player_total_speed)
-				{
-					player_speed = player_speed - _friction;
-				}
-			}
-			break;
+		}
+		break;
 	}
 }
 

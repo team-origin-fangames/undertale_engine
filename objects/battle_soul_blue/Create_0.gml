@@ -1,11 +1,11 @@
 event_inherited();
 
 _moveable = true;
-_direction = DIR.DOWN;
+_direction = DIR.RIGHT;
 _gravity = 0.2;
 _friction = 0.2;
 _acceleration = 0.4;
-_max_speed = 5;
+_speed_max = 5;
 
 enum SOUL_BLUE_STATE
 {
