@@ -1,3 +1,3 @@
-var inst = instance_create_depth(battle_board.x, battle_board.y, 0, battle_bullet_gb);
-inst._type = BATTLE_BULLET_TYPE.ORANGE;
+var inst = instance_create_depth(0, 0, 0, battle_soul_switch);
+inst._type = BATTLE_SOUL_TYPE.BLUE;
 alarm[1] = 300;

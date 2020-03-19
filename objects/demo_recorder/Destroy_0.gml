@@ -15,3 +15,8 @@ Flag_Set(FLAG_TYPE.DEMO,FLAG_DEMO.DATA,base64);
 buffer_delete(buffer);
 
 buffer_delete(_buffer);
+
+if (window_get_caption() != GAME_NAME)
+{
+	window_set_caption(GAME_NAME);
+}

@@ -5,3 +5,8 @@ repeat(_input_number){
 	proc+=1;
 }
 ds_list_destroy(_input_list);
+
+if (window_get_caption() != GAME_NAME)
+{
+	window_set_caption(GAME_NAME);
+}

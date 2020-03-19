@@ -1,15 +1,10 @@
 event_inherited();
 
-_moveable = true;
-_direction = DIR.RIGHT;
-_gravity = 0.2;
-_friction = 0.2;
-_acceleration = 0.4;
-_speed_max = 5;
-
-enum SOUL_BLUE_STATE
-{
-	ONGROUND,
-	JUMPING,
-	FALLING
-}
+moveable = true;
+dir = DIR.DOWN;
+move = 0;
+impact = false;
+_gravity_jump = 0.1;
+_speed_jump = 4;
+_gravity_fall = 0.15;
+_gravity_fall_max = 5;
