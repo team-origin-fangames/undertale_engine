@@ -1,12 +1,13 @@
-depth=DEPTH_BATTLE.BULLET;
-width=48;
-sticky=1;
-angle=0;
+depth = DEPTH_BATTLE.BULLET;
+_width = 48;
+_angle = 0;
+_type = BATTLE_PLATFORM_TYPE.GREEN;
+_outside = false;
 
-auto_destroy=true;
-auto_destroy_dir=-1;
+_auto_destroy = true;
+_auto_destroy_direction = DIR.LEFT;
 
-move_x=0;
-move_y=0;
+_speed_x = 0;
+_speed_y = 0;
 
-bounce_x=false;
+_bounce_x = false;

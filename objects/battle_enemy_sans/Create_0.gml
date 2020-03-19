@@ -1,9 +1,13 @@
 event_inherited();
+
 // Player Settings
 Player_SetName("Lasa");
 Player_SetLv(19);
 Player_SetHp(92);
 Player_SetHpMax(92);
+
+var bgm = audio_create_stream("bgm_battle.ogg");
+BGM_Play(1, bgm);
 
 // Head Variables
 _head_init_x = 0;
@@ -67,3 +71,13 @@ _turn = 0;
 // Emotion Object Create
 var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
 inst.face_id = 0;
+
+if(!Demo_IsPlaying()){
+	Demo_AddInput(INPUT.UP);
+	Demo_AddInput(INPUT.DOWN);
+	Demo_AddInput(INPUT.LEFT);
+	Demo_AddInput(INPUT.RIGHT);
+	Demo_AddInput(INPUT.CONFIRM);
+	Demo_AddInput(INPUT.CANCEL);
+	Demo_StartRecording();
+}

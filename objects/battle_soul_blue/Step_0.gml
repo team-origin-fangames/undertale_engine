@@ -1,7 +1,7 @@
 event_inherited();
 
 //根据朝向改变图像角度
-switch (dir)
+switch (_direction)
 {
     case DIR.UP:
 		image_angle = 180;
@@ -20,7 +20,7 @@ switch (dir)
 		break;
 }
 
-if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
+if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 {
     //获取当前总速度
 	var player_speed = Player_GetSpdTotal();
@@ -32,7 +32,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
     //应用移动
 	repeat (player_speed * 10)
     {
-        switch (dir)
+        switch (_direction)
         {
             case DIR.UP:
             case DIR.DOWN:
@@ -63,7 +63,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
 	//根据朝向确定需要判定的底部中点 + 0.1
 	var bottom_center_x_predicted = 0;
 	var bottom_center_y_predicted = 0;
-	switch (dir)
+	switch (_direction)
 	{
 		case DIR.UP:
 			bottom_center_y_predicted = - sprite_height / 2 - 0.1;
@@ -89,7 +89,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
 	
     //根据朝向设定跳跃输入
     var  jump_key = -1;
-    switch (dir)
+    switch (_direction)
     {
         case DIR.UP:
         	jump_key = INPUT.DOWN;
@@ -109,12 +109,12 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
     }
 	
 	//落地碰撞纠正
-    if ((block_collision_predicted || platform_collision_predicted) && move >= 0)
+    if ((block_collision_predicted || platform_collision_predicted) && _move >= 0)
     {
         var bottom_center_x = 0;
         var bottom_center_y = 0;
 
-        switch (dir)
+        switch (_direction)
         {
             case DIR.UP:
                 bottom_center_y = - sprite_height / 2
@@ -137,7 +137,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
         {
             var correction_x = 0;
             var correction_y = 0;
-            switch (dir)
+            switch (_direction)
             {
                 case DIR.UP:
                     correction_y = 0.1;
@@ -162,11 +162,11 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
 
         if(block_collision_predicted || platform_collision_predicted)
         {
-            move = 0;
+            _move = 0;
 
-            if (impact)
+            if (_impact)
             {
-                impact = false;
+                _impact = false;
                 audio_play_sound(snd_impact, 0, false);
 				Camera_Shake(8, 8, 1, 1, true, true);
             }
@@ -176,7 +176,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
             {
                 var platform_x_predicted = 0;
                 var platform_y_predicted = 0;
-                switch (dir)
+                switch (_direction)
                 {
                     case DIR.UP:
                         platform_y_predicted = - sprite_height / 2 - 1;
@@ -196,7 +196,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
                 }
 
 				var inst = instance_position(x + platform_x_predicted, y + platform_y_predicted, battle_platform);
-				if(instance_exists(inst) && inst.sticky)
+				if(instance_exists(inst) && inst._type == BATTLE_PLATFORM_TYPE.GREEN)
 				{
 					x = x + inst.x - inst.xprevious;
 				}
@@ -204,53 +204,53 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
 
 			if(Input_IsHeld(jump_key))
 			{
-				move = -_speed_jump;
+				_move = - _speed_jump;
 			}
         }
-    }else if (move < 0)
+    }else if (_move < 0)
 	{
-		move = move + _gravity_jump;
+		_move = _move + _gravity_jump;
 
 		if (!Input_IsHeld(jump_key))
 		{
-			move = 0;
+			_move = 0;
 		}
-	}else if (move < 0.05)
+	}else if (_move < 0.05)
 	{
-		move = move + 0.01;
-	}else if (move < _gravity_fall_max)
+		_move = _move + 0.01;
+	}else if (_move < _gravity_fall_max)
 	{
-		move = move + _gravity_fall;
+		_move = _move + _gravity_fall;
 	}
 
-	repeat (abs(move) * 10)
+	repeat (abs(_move) * 10)
 	{
 		var can_move = 0;
 		var bottom_center_x_move_predicted = 0;
 		var bottom_center_y_move_predicted = 0;
 
-		switch (dir)
+		switch (_direction)
         {
             case DIR.UP:
-                bottom_center_y_move_predicted = - (sprite_height / 2) * sign(move);
+                bottom_center_y_move_predicted = - (sprite_height / 2) * sign(_move);
 		        break;
 
 	        case DIR.DOWN:
-		        bottom_center_y_move_predicted = (sprite_height / 2) * sign(move);
+		        bottom_center_y_move_predicted = (sprite_height / 2) * sign(_move);
 		        break;
 
 	        case DIR.LEFT:
-		        bottom_center_x_move_predicted = - (sprite_width / 2) * sign(move);
+		        bottom_center_x_move_predicted = - (sprite_width / 2) * sign(_move);
 		        break;
 
 	        case DIR.RIGHT:
-		    	bottom_center_x_move_predicted = (sprite_width / 2) * sign(move);
+		    	bottom_center_x_move_predicted = (sprite_width / 2) * sign(_move);
 		        break;
         }
 
 		if (!position_meeting(x + bottom_center_x_move_predicted, y + bottom_center_y_move_predicted, block))
 		{
-			can_move = !((move > 0) && position_meeting(x + bottom_center_x_move_predicted, y + bottom_center_x_move_predicted, battle_platform));
+			can_move = !((_move > 0) && position_meeting(x + bottom_center_x_move_predicted, y + bottom_center_x_move_predicted, battle_platform));
 		} else
 		{
 			can_move = false;
@@ -260,22 +260,22 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && moveable)
 		{
 			var move_x = 0;
 			var move_y = 0;
-			switch (dir)
+			switch (_direction)
         	{
         	    case DIR.UP:
-        	        move_y = - 0.1 * sign(move);
+        	        move_y = - 0.1 * sign(_move);
 			        break;
 
 	    	    case DIR.DOWN:
-			        move_y = 0.1 * sign(move);
+			        move_y = 0.1 * sign(_move);
 			        break;
 
 	    	    case DIR.LEFT:
-			        move_x = - 0.1 * sign(move);
+			        move_x = - 0.1 * sign(_move);
 			        break;
 
 	    	    case DIR.RIGHT:
-			    	move_x = 0.1 * sign(move);
+			    	move_x = 0.1 * sign(_move);
 			        break;
         	}
 			x = x + move_x;

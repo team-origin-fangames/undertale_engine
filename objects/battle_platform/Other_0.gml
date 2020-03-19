@@ -1,18 +1,38 @@
-if(auto_destroy){
-	var destroy=false;
-	if(auto_destroy_dir==DIR.UP&&y<0){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.DOWN&&y>480){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.LEFT&&x<0){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.RIGHT&&y>640){
-		destroy=true;
-	}
-	if(destroy){
-		instance_destroy();
+if (_auto_destroy)
+{
+	var destroy = false;
+	switch (_auto_destroy_direction)
+	{
+		case DIR.UP:
+			if (y < 0)
+			{
+				destroy = true;
+			}
+			break;
+			
+		case DIR.DOWN:
+			if (y > 480)
+			{
+				destroy = true;
+			}
+			break;
+			
+		case DIR.LEFT:
+			if (x < 0)
+			{
+				destroy = true;
+			}
+			break;
+			
+		case DIR.RIGHT:
+			if (x > 640)
+			{
+				destroy = true;
+			}
+			break;
+		if (destroy)
+		{
+			instance_destroy();
+		}
 	}
 }
