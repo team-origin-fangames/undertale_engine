@@ -1,5 +1,5 @@
 ///@desc Turn Preparation Start
-Battle_SetSoul(battle_soul_blue);
+Battle_SetSoul(battle_soul_yellow);
 Battle_SetTurnInfo(BATTLE_TURN.TIME,-1);
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_UP,80);
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_LEFT,105);

@@ -33,7 +33,8 @@
         "b854b403-3bd1-4ec2-b631-af2dca5668db",
         "7e6f613c-8041-42e7-b19c-cce1e2b47a6c",
         "36c46736-e060-4e8c-80e6-bbe71953769d",
-        "cd35e6cd-93d5-42e8-bf58-2bb9961481f4"
+        "cd35e6cd-93d5-42e8-bf58-2bb9961481f4",
+        "a3ff7236-7591-4f13-8404-621f0b7ee1c3"
     ],
     "filterType": "GMSound",
     "folderName": "SFX",

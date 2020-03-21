@@ -9,6 +9,9 @@ Player_SetHpMax(92);
 var bgm = audio_create_stream("bgm_battle.ogg");
 BGM_Play(1, bgm);
 
+var inst = instance_create_depth(0, 0, 0, battle_popup_message);
+inst._text = "Now Playing: idk the track name = =";
+
 // Head Variables
 _head_init_x = 0;
 _head_init_y = -41;

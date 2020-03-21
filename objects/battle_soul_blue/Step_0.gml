@@ -1,6 +1,5 @@
 event_inherited();
 
-//根据朝向改变图像角度
 switch (_direction)
 {
     case DIR.UP:
@@ -22,14 +21,12 @@ switch (_direction)
 
 if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 {
-    //获取当前总速度
 	var player_speed = Player_GetSpdTotal();
 	if (Input_IsHeld(INPUT.CANCEL))
     {
         var player_speed = player_speed / 2;
     }
 
-    //应用移动
 	repeat (player_speed * 10)
     {
         switch (_direction)
@@ -60,7 +57,6 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
         }
 	}
 
-	//根据朝向确定需要判定的底部中点 + 0.1
 	var bottom_center_x_predicted = 0;
 	var bottom_center_y_predicted = 0;
 	switch (_direction)
@@ -83,11 +79,9 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 
 	}
 
-    //判定该点是否与block或battle_platform碰撞
 	var block_collision_predicted = position_meeting(x + bottom_center_x_predicted, y + bottom_center_y_predicted, block);
 	var platform_collision_predicted = position_meeting(x + bottom_center_x_predicted, y + bottom_center_y_predicted, battle_platform);
 	
-    //根据朝向设定跳跃输入
     var  jump_key = -1;
     switch (_direction)
     {
@@ -108,7 +102,6 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 	    	break;
     }
 	
-	//落地碰撞纠正
     if ((block_collision_predicted || platform_collision_predicted) && _move >= 0)
     {
         var bottom_center_x = 0;
@@ -130,7 +123,7 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 
 	        case DIR.RIGHT:
 		        bottom_center_x = sprite_width / 2;
-		    break;
+				break;
         }
 
         while (position_meeting(x + bottom_center_x, y + bottom_center_y, block) || position_meeting(x + bottom_center_x, y + bottom_center_y, battle_platform))
