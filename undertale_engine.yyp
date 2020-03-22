@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "058dbe7a-8e0f-4485-8ad8-8b5596be63b2",
-            "Value": {
-                "id": "08817244-1f38-4123-9f7b-00eb7ace78ff",
-                "resourcePath": "notes\\compatibility_report_220320_175603563.yy",
-                "resourceType": "GMNotes"
-            }
-        },
-        {
             "Key": "05dc1ca4-60ff-42fb-b3de-4611baad1f68",
             "Value": {
                 "id": "85536c63-95d2-461e-9bd4-5962dea628d7",
@@ -847,14 +839,6 @@
             }
         },
         {
-            "Key": "23287a1a-a4c2-4d04-951a-26843e97de40",
-            "Value": {
-                "id": "9130d39d-7bc7-4690-874c-a55a06dc09bf",
-                "resourcePath": "notes\\compatibility_report_220320_1755335533.yy",
-                "resourceType": "GMNotes"
-            }
-        },
-        {
             "Key": "23c828bb-d953-413e-bca2-85a590aa04dd",
             "Value": {
                 "id": "0bb803ba-359d-422a-803d-934e7533dd62",
@@ -1236,14 +1220,6 @@
                 "id": "fbbf282e-e143-4009-99e9-d6cf4edea89e",
                 "resourcePath": "scripts\\Macro_Game\\Macro_Game.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "360746e1-2884-4808-81f9-f70105e66e4d",
-            "Value": {
-                "id": "22b4cc13-c229-427a-8f31-5454b4cc86d7",
-                "resourcePath": "notes\\compatibility_report_220320_1753415341.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
