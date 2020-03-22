@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "058dbe7a-8e0f-4485-8ad8-8b5596be63b2",
+            "Value": {
+                "id": "08817244-1f38-4123-9f7b-00eb7ace78ff",
+                "resourcePath": "notes\\compatibility_report_220320_175603563.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "05dc1ca4-60ff-42fb-b3de-4611baad1f68",
             "Value": {
                 "id": "85536c63-95d2-461e-9bd4-5962dea628d7",
@@ -460,6 +468,14 @@
                 "id": "7dbfb775-dce7-41c7-ac37-1e43f5d4406c",
                 "resourcePath": "scripts\\Encounter_IsQuick\\Encounter_IsQuick.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1348417a-750c-4d46-a42a-3a9e04648df4",
+            "Value": {
+                "id": "b8620a85-229b-4c79-81db-107e82475426",
+                "resourcePath": "objects\\shockwave\\shockwave.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -815,11 +831,27 @@
             }
         },
         {
+            "Key": "22d49470-c557-4a34-aa68-6c89e1ebb395",
+            "Value": {
+                "id": "e7e060a4-0280-4d58-9606-14e792be0f16",
+                "resourcePath": "objects\\char_player_shader\\char_player_shader.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "231d3a63-1392-4686-a67f-7ba953a46f8b",
             "Value": {
                 "id": "aef4e6f7-aec6-4d34-bf39-400271064cc5",
                 "resourcePath": "datafiles_yy\\locale\\english\\sprite\\battle_button_mercy.png.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "23287a1a-a4c2-4d04-951a-26843e97de40",
+            "Value": {
+                "id": "9130d39d-7bc7-4690-874c-a55a06dc09bf",
+                "resourcePath": "notes\\compatibility_report_220320_1755335533.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -1207,6 +1239,14 @@
             }
         },
         {
+            "Key": "360746e1-2884-4808-81f9-f70105e66e4d",
+            "Value": {
+                "id": "22b4cc13-c229-427a-8f31-5454b4cc86d7",
+                "resourcePath": "notes\\compatibility_report_220320_1753415341.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "36554a22-d2a9-4db0-82dd-a42281994450",
             "Value": {
                 "id": "f1610156-abcc-45f2-9647-3423cd4200c3",
@@ -1420,6 +1460,14 @@
                 "id": "8225ac13-f34d-4014-a1b2-24da5bf95f70",
                 "resourcePath": "sprites\\spr_bullet_bone_body\\spr_bullet_bone_body.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ffbc54b-78ac-4200-a328-ccc9f2687b6f",
+            "Value": {
+                "id": "a374d1cf-cf71-4737-ac8b-fd5a9f691d01",
+                "resourcePath": "objects\\battle_warning\\battle_warning.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2503,6 +2551,14 @@
             }
         },
         {
+            "Key": "789c0a81-652f-4e2b-b796-20d6720da7fa",
+            "Value": {
+                "id": "037bd3cf-4ab0-4372-aaee-18a4e3a936f9",
+                "resourcePath": "shaders\\shd_shockwave\\shd_shockwave.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "78eb2428-ffd4-4cbd-95c5-3921bf9e2964",
             "Value": {
                 "id": "9463e1a0-69da-4c69-bb59-6716a2952975",
@@ -3108,6 +3164,14 @@
                 "id": "507b7516-128a-4da4-8cda-cbc6d93669ca",
                 "resourcePath": "scripts\\Input_Bind\\Input_Bind.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "92fd4604-06d7-45c5-9dfb-e8f1d291816c",
+            "Value": {
+                "id": "f785be74-b8d0-4f6f-af9a-17d037fb0972",
+                "resourcePath": "objects\\battle_turn_bone_wave\\battle_turn_bone_wave.yy",
+                "resourceType": "GMObject"
             }
         },
         {

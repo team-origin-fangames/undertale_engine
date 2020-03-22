@@ -19,9 +19,10 @@
         "1ae7e884-c81e-4608-8021-e9df711184bf",
         "05857894-fdb1-4fdc-beb0-725607e94885",
         "3f6de104-1d02-48a0-ac6e-edd13724c752",
-        "eeeebd5f-b081-449d-b71c-f9f8878a1a7f",
         "d92a4c9b-bb9b-4db1-b95a-df43c7f8b4b6",
-        "22bf1e5b-1b51-4aa8-bb40-1a606ca89b40"
+        "eeeebd5f-b081-449d-b71c-f9f8878a1a7f",
+        "22bf1e5b-1b51-4aa8-bb40-1a606ca89b40",
+        "3ffbc54b-78ac-4200-a328-ccc9f2687b6f"
     ],
     "filterType": "GMObject",
     "folderName": "Battle",

@@ -1,0 +1,4 @@
+Converting GML script: GMLiveHelper.gml
+Converted description /// @description  (): 
+Converted string - line 12: '"' -> "\""
+Converted string - line 12: '"' -> "\""

@@ -1,0 +1,15 @@
+Converting GML script: netlog.gml
+Converted description /// @description  ()
+
+Converting GML script: netlog.gml
+Converted description /// @description  ()
+
+Converting GML script: netlog.gml
+Converted description /// @description  (url, port): Attempts connecting to netlog server (if available)./// @param url
+/// @param  port
+
+Converting GML script: netlog.gml
+Converted description /// @description  (): Should be added to Async - Networking event
+
+Converting GML script: netlog.gml
+Converted description /// @description  (message): Sends a message either to server (if connected) or to show_debug_message./// @param message

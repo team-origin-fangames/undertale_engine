@@ -164,7 +164,6 @@ if (Battle_GetState() == BATTLE_STATE.IN_TURN && _moveable)
 				Camera_Shake(8, 8, 1, 1, true, true);
             }
 			
-			//板子判定与处理黏性
             if (platform_collision_predicted)
             {
                 var platform_x_predicted = 0;

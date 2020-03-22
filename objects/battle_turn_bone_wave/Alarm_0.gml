@@ -1,0 +1,1 @@
+instance_create_depth(BATTLE_BOARD.X, BATTLE_BOARD.Y, 0, shockwave);

@@ -68,7 +68,7 @@ _fight_state = FIGHT_STATE.NORMAL;
 
 // Turn Variables
 _turn_list = ds_list_create();
-ds_list_add(_turn_list,);
+ds_list_add(_turn_list, battle_turn_bone_wave);
 _turn = 0;
 
 // Emotion Object Create
