@@ -6,9 +6,9 @@ Player_SetLv(19);
 Player_SetHp(92);
 Player_SetHpMax(92);
 
+// Play BGM
 var bgm = audio_create_stream("bgm_battle.ogg");
 BGM_Play(1, bgm);
-
 var inst = instance_create_depth(0, 0, 0, battle_popup_message);
 inst._text = "Now Playing: idk the track name = =";
 
@@ -68,13 +68,14 @@ _fight_state = FIGHT_STATE.NORMAL;
 
 // Turn Variables
 _turn_list = ds_list_create();
-ds_list_add(_turn_list, battle_turn_sans_0);
+ds_list_add(_turn_list,);
 _turn = 0;
 
 // Emotion Object Create
 var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
 inst.face_id = 0;
 
+// Start Recording
 if(!Demo_IsPlaying()){
 	Demo_AddInput(INPUT.UP);
 	Demo_AddInput(INPUT.DOWN);

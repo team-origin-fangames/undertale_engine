@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "2454821f-bb1b-48f8-b8fa-599a712a1a28",
+            "Value": {
+                "id": "8f517570-93c5-4d4e-84e5-69c8c2a0b221",
+                "resourcePath": "sprites\\spr_battle_platform_purple\\spr_battle_platform_purple.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "245c350b-b7e6-4ab6-8d76-205fba082d60",
             "Value": {
                 "id": "61f0d211-0db3-4b38-b114-d5490cedfaaa",
@@ -3463,14 +3471,6 @@
             }
         },
         {
-            "Key": "a2fa8489-9a4d-4678-9ff7-5ef334cd492a",
-            "Value": {
-                "id": "91a2496c-bcee-4f7c-9e8f-3320667c3c2c",
-                "resourcePath": "objects\\battle_turn_sans_0\\battle_turn_sans_0.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a3ff7236-7591-4f13-8404-621f0b7ee1c3",
             "Value": {
                 "id": "73ce8a68-6dbc-4fb7-ac42-76c9108033a6",
@@ -3764,6 +3764,14 @@
                 "id": "6ecc5216-6c9a-448b-93b8-a2a16a6e701e",
                 "resourcePath": "sprites\\spr_demo_recording\\spr_demo_recording.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b3244f61-3fd0-48f5-ba7e-37f1dd248955",
+            "Value": {
+                "id": "acff9250-e6c7-43dd-abe4-48283a15e6b3",
+                "resourcePath": "views\\b3244f61-3fd0-48f5-ba7e-37f1dd248955.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
