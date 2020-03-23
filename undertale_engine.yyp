@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "12b8edba-51f1-4ed7-95e3-d6bcc40ebdef",
+            "Value": {
+                "id": "32a58cd3-aa3d-4ab6-9cdd-d3448765fecc",
+                "resourcePath": "scripts\\MakeBoneTwoV\\MakeBoneTwoV.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1345da38-1e5e-4318-b7b4-201e22886166",
             "Value": {
                 "id": "7dbfb775-dce7-41c7-ac37-1e43f5d4406c",
@@ -1751,6 +1759,14 @@
             }
         },
         {
+            "Key": "5000921a-b00c-408a-8a63-72ac15c32298",
+            "Value": {
+                "id": "78d695fd-7416-45ef-aae6-544fce7ee074",
+                "resourcePath": "scripts\\MakeBoneWallTop\\MakeBoneWallTop.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5074c35e-cf44-42ca-bc5a-a778813c4508",
             "Value": {
                 "id": "622a50f1-0300-47bc-99f9-b1729523d0ca",
@@ -1844,6 +1860,14 @@
                 "id": "4b3bc525-e7a6-40bc-afb5-9469368f2361",
                 "resourcePath": "sprites\\spr_char_frisk_up\\spr_char_frisk_up.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5499ecd2-92d0-47ad-af86-7dc3d0a49c58",
+            "Value": {
+                "id": "b6038a39-7a23-44a4-8da8-3f11224c668a",
+                "resourcePath": "views\\5499ecd2-92d0-47ad-af86-7dc3d0a49c58.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2131,6 +2155,14 @@
             "Value": {
                 "id": "eeecab0e-3d5d-4a18-b7d8-68d74bfe73ce",
                 "resourcePath": "scripts\\Player_SetHpMax\\Player_SetHpMax.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6369f062-8a89-461c-8aff-1c6fb0c20d63",
+            "Value": {
+                "id": "6ae9ceb2-dc87-4634-841d-fcd1d40d390b",
+                "resourcePath": "scripts\\MakeBoneWallLeft\\MakeBoneWallLeft.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2487,6 +2519,14 @@
             }
         },
         {
+            "Key": "75990a7d-b7a4-40c0-8240-ba15afbdaf23",
+            "Value": {
+                "id": "c57ce44d-8dbb-45e2-8cf8-6e31f55171dd",
+                "resourcePath": "scripts\\MakeBoneV\\MakeBoneV.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75bd8c63-aec9-44f7-ad5b-ba6cf3db622c",
             "Value": {
                 "id": "cfe1cb39-316c-4acb-9891-383b148c57e5",
@@ -2599,6 +2639,14 @@
             }
         },
         {
+            "Key": "7b4799d2-e5ae-4c9e-ba83-9cf7a764faeb",
+            "Value": {
+                "id": "fe9bc63d-8dfe-423d-a827-51240b97520b",
+                "resourcePath": "scripts\\MakeBoneLeft\\MakeBoneLeft.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7b56ec5a-c6db-417b-b24d-5a5c367765b3",
             "Value": {
                 "id": "26771778-9d93-41f5-bc50-3dc91c3c8918",
@@ -2684,6 +2732,14 @@
                 "id": "b7fdf729-015c-4b23-9a81-8078107fe6c4",
                 "resourcePath": "sounds\\snd_gb_fire\\snd_gb_fire.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "7e9357f1-3914-4b4c-85ec-a2c2ac775db3",
+            "Value": {
+                "id": "ae97a4f9-3caa-469e-859d-dfa6fccb97f2",
+                "resourcePath": "scripts\\MakeBoneWallRight\\MakeBoneWallRight.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2860,6 +2916,14 @@
                 "id": "1a89e077-5d30-491f-82fa-a698731b0d36",
                 "resourcePath": "objects\\text_typer\\text_typer.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "86e4d815-ff42-4467-bc7c-85c38a81aca9",
+            "Value": {
+                "id": "74544571-02f8-48a3-9c71-a2f7e9c87191",
+                "resourcePath": "scripts\\MakeBoneWallBottom\\MakeBoneWallBottom.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3247,6 +3311,14 @@
             }
         },
         {
+            "Key": "95b13304-0e38-406d-a1e7-fa97b416f8e7",
+            "Value": {
+                "id": "d8c28c6d-f117-49a1-9188-1ffaf8a9edb6",
+                "resourcePath": "scripts\\GB_Create\\GB_Create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "95c5cf6c-742f-4318-98c3-ba3ec568ddfd",
             "Value": {
                 "id": "95073157-5595-4ca7-9237-9b4ae0eac8dd",
@@ -3527,6 +3599,14 @@
             }
         },
         {
+            "Key": "a3506fcf-560b-47de-a2ff-bc773da662cb",
+            "Value": {
+                "id": "c0179e41-0074-41d9-b5c1-93e9c24e4531",
+                "resourcePath": "scripts\\MakeBoneH\\MakeBoneH.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a3ff7236-7591-4f13-8404-621f0b7ee1c3",
             "Value": {
                 "id": "73ce8a68-6dbc-4fb7-ac42-76c9108033a6",
@@ -3691,6 +3771,14 @@
             "Value": {
                 "id": "9bd7c1a9-89a1-4eb6-a5e0-b024403724bf",
                 "resourcePath": "scripts\\Border_SetSprite\\Border_SetSprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "acbc30d2-c986-4f5e-b0b3-7fd71f0aae00",
+            "Value": {
+                "id": "93b80fbe-d2cb-48dc-9d8a-d90b4191df84",
+                "resourcePath": "scripts\\MakeBoneTwoH\\MakeBoneTwoH.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4164,6 +4252,14 @@
                 "id": "795f9295-d5f4-4390-91b9-f3fe19bf6f34",
                 "resourcePath": "sounds\\snd_menu_cancel\\snd_menu_cancel.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c49620a7-e73e-4212-a37a-33770baa61a2",
+            "Value": {
+                "id": "b5090e94-001b-40a6-8d7b-f86f156bd9d2",
+                "resourcePath": "scripts\\MakeBoneTop\\MakeBoneTop.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4779,6 +4875,14 @@
             "Value": {
                 "id": "47cef891-0ffd-4d8b-a847-3cd7f4f593f8",
                 "resourcePath": "scripts\\Battle_RewardGold\\Battle_RewardGold.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e06d6bde-100d-4f15-8811-4c6156f9e59b",
+            "Value": {
+                "id": "b371bf2a-9291-4ada-a48d-a8944c0c9dd3",
+                "resourcePath": "scripts\\MakeBoneRight\\MakeBoneRight.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5485,6 +5589,14 @@
                 "resourcePath": "scripts\\Flag_Custom\\Flag_Custom.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "ff4b601d-a303-4a27-998e-cf8abf1a1feb",
+            "Value": {
+                "id": "b40ff811-6821-4e58-bf7e-6d544245abe0",
+                "resourcePath": "scripts\\Bone_CreateBottom\\Bone_CreateBottom.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -5592,6 +5704,19 @@
         "7f159fb3-5f5c-4715-bfe3-04f23a52014c",
         "c7c316a0-51e1-4b2e-976b-ba4024ebbb6c",
         "36554a22-d2a9-4db0-82dd-a42281994450",
+        "ff4b601d-a303-4a27-998e-cf8abf1a1feb",
+        "a3506fcf-560b-47de-a2ff-bc773da662cb",
+        "7b4799d2-e5ae-4c9e-ba83-9cf7a764faeb",
+        "e06d6bde-100d-4f15-8811-4c6156f9e59b",
+        "c49620a7-e73e-4212-a37a-33770baa61a2",
+        "acbc30d2-c986-4f5e-b0b3-7fd71f0aae00",
+        "12b8edba-51f1-4ed7-95e3-d6bcc40ebdef",
+        "75990a7d-b7a4-40c0-8240-ba15afbdaf23",
+        "86e4d815-ff42-4467-bc7c-85c38a81aca9",
+        "6369f062-8a89-461c-8aff-1c6fb0c20d63",
+        "7e9357f1-3914-4b4c-85ec-a2c2ac775db3",
+        "5000921a-b00c-408a-8a63-72ac15c32298",
+        "95b13304-0e38-406d-a1e7-fa97b416f8e7",
         "ea8dbbbb-5fde-41e8-9332-445072cf338c",
         "685ca594-f71a-4e2c-9646-72278e835068",
         "ab615959-1663-4f00-bfd6-a617b9265df9",

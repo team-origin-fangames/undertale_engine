@@ -86,3 +86,14 @@ if(!Demo_IsPlaying()){
 	Demo_AddInput(INPUT.CANCEL);
 	Demo_StartRecording();
 }
+
+// Afterimage Effect Variables
+_afterimage = true;
+_afterimage_number = 5;
+_afterimage_time = 2;
+for (_part = 0; _part < 4; _part = _part + 1)
+{
+	_afterimage_part_x[_part] = ds_list_create();
+	_afterimage_part_y[_part] = ds_list_create();
+	_afterimage_part_angle[_part] = ds_list_create();
+}
