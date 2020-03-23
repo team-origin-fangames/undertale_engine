@@ -1,0 +1,13 @@
+Gaster Blaster!Sans Fight
+
+Gaster Blaster!Sans Fight is an Undertale fangame, 
+based on the famous fanmade character Gaster Blaster!Sans.
+
+Developed with GameMaker Studio 2, powered by UNDERTALE Engine.
+
+Lasagnaaa - Programming / Spriting
+zhazha - Programming
+xuwu - Programming
+TML - Programming (UNDERTALE Engine)
+Director Ma - Composing / Designing
+Ouhuang - Writing

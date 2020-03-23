@@ -2639,6 +2639,22 @@
             }
         },
         {
+            "Key": "7c8c7255-6acd-4259-ae1f-7aa2f1f45cfd",
+            "Value": {
+                "id": "3dd1636e-3606-4997-9b14-926f8340beea",
+                "resourcePath": "extensions\\extension0\\extension0.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "7d5cec9b-3d5a-4abc-8c42-9bfde2d00804",
+            "Value": {
+                "id": "fce87a6f-d994-4f9d-a2f5-3f3654462cf5",
+                "resourcePath": "notes\\note_staff.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "7d9360b9-2e52-439c-8139-1c5d3acc13c4",
             "Value": {
                 "id": "72b422a0-508d-41d0-a794-21a149bc6b94",
@@ -2674,7 +2690,7 @@
             "Key": "7e9926d2-5389-4d15-aa8a-be05fe504a3f",
             "Value": {
                 "id": "b2d51cbe-4ea5-430c-ae27-8e7b3ce30ecb",
-                "resourcePath": "datafiles_yy\\bgm_battle.ogg.yy",
+                "resourcePath": "datafiles_yy\\music\\bgm_battle.ogg.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -5260,6 +5276,14 @@
                 "id": "d92f44fe-421f-4a0b-b3f4-12090026a811",
                 "resourcePath": "sprites\\spr_gamepad_ps4_small_l3\\spr_gamepad_ps4_small_l3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f513cb3c-4bcb-47ae-aefd-e8f06ffefb11",
+            "Value": {
+                "id": "c868a5ea-c8a3-435c-aac0-3efe87cb11aa",
+                "resourcePath": "views\\f513cb3c-4bcb-47ae-aefd-e8f06ffefb11.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

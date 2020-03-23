@@ -16,3 +16,4 @@ if (hit > 4)
 }
 
 Player_SetHit(0);
+return true;

@@ -8,7 +8,7 @@
     "exportAction": 0,
     "exportDir": "",
     "fileName": "bgm_battle.ogg",
-    "filePath": "datafiles",
+    "filePath": "datafiles\\music",
     "freeData": false,
     "origName": "",
     "overwrite": false,
