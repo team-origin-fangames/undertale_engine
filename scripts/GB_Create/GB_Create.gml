@@ -22,14 +22,14 @@ var pause = argument[9];
 var duration = argument[10];
 
 var bb = instance_create_depth(xx,yy,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_bullet_gb);
-bb.x_target = idealx;
-bb.y_target = idealy;
-bb.angle_start = angle;
-bb.angle_target = idealrot;
-bb.scale_x = xscale;
-bb.scale_y = yscale;
-bb.type = color;
-bb.time_release_delay = pause;
-bb.time_beam_end_delay = duration;
+bb._x_target = idealx;
+bb._y_target = idealy;
+bb._angle_start = angle;
+bb._angle_target = idealrot;
+bb._scale_x = xscale;
+bb._scale_y = yscale;
+bb._type = color;
+bb._time_release_delay = pause;
+bb._time_beam_end_delay = duration;
 
 return bb;

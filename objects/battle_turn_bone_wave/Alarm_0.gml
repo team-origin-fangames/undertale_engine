@@ -1,4 +1,8 @@
-var process = 0;
+inst = instance_create_depth(battle_board.x, battle_board.y, 0, battle_bullet_bone);
+
+
+
+/*var process = 0;
 var number = 20;
 repeat (number)
 {
@@ -23,5 +27,6 @@ repeat (number)
 }
 
 alarm[1] = 400;
+*/
 
 	

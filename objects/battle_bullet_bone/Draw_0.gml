@@ -19,15 +19,34 @@ switch (_type)
 }
 
 var bone_end_length = sprite_get_width(spr_bullet_bone_end);
-
-if (_no_bottom)
+switch (_origin)
 {
-	draw_sprite_ext(spr_bullet_bone_body, 0, x, y, _length - bone_end_length, 1, _direction, color, 1);
-	draw_sprite_ext(spr_bullet_bone_end, 0 , x + lengthdir_x(_length, _direction), y + lengthdir_y(_length, _direction), -1, 1, _direction, color, 1);
-} else {
-	draw_sprite_ext(spr_bullet_bone_end, 0, x, y, 1, 1, _direction, color, 1);
-	draw_sprite_ext(spr_bullet_bone_body, 0, x + lengthdir_x(bone_end_length, _direction), y + lengthdir_y(bone_end_length, _direction), _length - bone_end_length * 2, 1, _direction, color, 1);
-	draw_sprite_ext(spr_bullet_bone_end, 0, x + lengthdir_x(_length, _direction), y + lengthdir_y(_length, _direction), -1, 1, _direction, color, 1);
+	case BATTLE_BULLET_BONE_ORIGIN.BOTTOM_CENTER:
+
+		if (_no_bottom)
+		{
+			draw_sprite_ext(spr_bullet_bone_body, 0, x, y, _length - bone_end_length, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_end, 0 , x + lengthdir_x(_length, _direction), y + lengthdir_y(_length, _direction), -1, 1, _direction, color, 1);
+		} else 
+		{
+			draw_sprite_ext(spr_bullet_bone_end, 0, x, y, 1, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_body, 0, x + lengthdir_x(bone_end_length, _direction), y + lengthdir_y(bone_end_length, _direction), _length - bone_end_length * 2, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_end, 0, x + lengthdir_x(_length, _direction), y + lengthdir_y(_length, _direction), -1, 1, _direction, color, 1);
+		}
+		break;
+		
+	case BATTLE_BULLET_BONE_ORIGIN.MIDDLE_CENTER:
+		if (_no_bottom)
+		{
+			draw_sprite_ext(spr_bullet_bone_body, 0, x + lengthdir_x((_length - bone_end_length) / 2, _direction - 180), y + lengthdir_y((_length - bone_end_length) / 2, _direction - 180), _length - bone_end_length, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_end, 0, x + lengthdir_x(_length / 2, _direction), y + lengthdir_y(_length / 2, _direction), -1, 1, _direction, color, 1);
+		}else
+		{
+			draw_sprite_ext(spr_bullet_bone_body, 0, x + lengthdir_x((_length - bone_end_length * 2) / 2, _direction - 180), y + lengthdir_y((_length - bone_end_length * 2) / 2, _direction - 180), _length - bone_end_length * 2, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_end, 0, x + lengthdir_x(_length / 2, _direction), y + lengthdir_y(_length / 2, _direction), -1, 1, _direction, color, 1);
+			draw_sprite_ext(spr_bullet_bone_end, 0, x + lengthdir_x(_length / 2,  _direction - 180), y + lengthdir_y(_length / 2, _direction - 180), 1, 1, _direction, color, 1);
+		}
+		break;
 }
 
 if (!_outside)
