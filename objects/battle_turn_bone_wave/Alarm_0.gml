@@ -1,4 +1,4 @@
-inst = instance_create_depth(battle_board.x, battle_board.y, 0, battle_bullet_bone);
+var inst = Battle_CreateBone()
 
 
 

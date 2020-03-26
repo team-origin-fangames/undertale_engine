@@ -94,3 +94,8 @@ switch (_origin)
 		}
 		break;
 }
+
+if (_rotate)
+{
+	_direction = _direction + _rotate_angle;
+}

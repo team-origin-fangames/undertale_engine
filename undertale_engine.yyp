@@ -2519,6 +2519,14 @@
             }
         },
         {
+            "Key": "78320de5-5535-4948-bb15-2f828c4bc186",
+            "Value": {
+                "id": "89471912-8c2c-4b54-9498-727f91c9c476",
+                "resourcePath": "scripts\\Battle_CreateBone\\Battle_CreateBone.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "784ce4fe-7afb-474a-906e-cda2559e1961",
             "Value": {
                 "id": "9cc88d14-49e3-46e9-88d8-d9be1a21685d",
@@ -3250,7 +3258,7 @@
             "Key": "95b13304-0e38-406d-a1e7-fa97b416f8e7",
             "Value": {
                 "id": "d8c28c6d-f117-49a1-9188-1ffaf8a9edb6",
-                "resourcePath": "scripts\\GB_Create\\GB_Create.yy",
+                "resourcePath": "scripts\\Battle_CreateGasterBlaster\\Battle_CreateGasterBlaster.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4212,6 +4220,14 @@
                 "id": "bf954307-8885-454a-9b54-36769cc85da6",
                 "resourcePath": "objects\\block_corner\\block_corner.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c5d8746f-0bc8-4551-9914-d897a877c15d",
+            "Value": {
+                "id": "eaf50fc0-ad47-4687-a62e-283420cedb55",
+                "resourcePath": "views\\c5d8746f-0bc8-4551-9914-d897a877c15d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -5601,6 +5617,7 @@
         "c7c316a0-51e1-4b2e-976b-ba4024ebbb6c",
         "36554a22-d2a9-4db0-82dd-a42281994450",
         "95b13304-0e38-406d-a1e7-fa97b416f8e7",
+        "78320de5-5535-4948-bb15-2f828c4bc186",
         "ea8dbbbb-5fde-41e8-9332-445072cf338c",
         "685ca594-f71a-4e2c-9646-72278e835068",
         "ab615959-1663-4f00-bfd6-a617b9265df9",
