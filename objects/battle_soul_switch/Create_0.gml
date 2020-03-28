@@ -1,5 +1,5 @@
 _sprite_list = ds_list_create();
-ds_list_add(_sprite_list, spr_battle_soul_red, spr_battle_soul_blue, spr_battle_soul_yellow);
+ds_list_add(_sprite_list, spr_battle_soul_red, spr_battle_soul_blue, spr_battle_soul_yellow, spr_battle_soul_reimu);
 _type = BATTLE_SOUL_TYPE.RED;
 _direction = DIR.DOWN;
 depth = DEPTH_BATTLE.SOUL;

@@ -7,6 +7,8 @@ _frame_current=0;
 _paused=false;
 _fps=0;
 _icon_show_tick=0;
+_show_info_window_title = true;
+_show_icon = false;
 depth=DEPTH_UI.FADER-100;
 if(buffer_get_size(_buffer)>0){
 	_seed=buffer_read(_buffer,buffer_u32);

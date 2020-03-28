@@ -16,7 +16,10 @@ buffer_delete(buffer);
 
 buffer_delete(_buffer);
 
-if (window_get_caption() != GAME_NAME)
+if (_show_info_window_title)
 {
-	window_set_caption(GAME_NAME);
+	if (window_get_caption() != GAME_NAME)
+	{
+		window_set_caption(GAME_NAME);
+	}
 }

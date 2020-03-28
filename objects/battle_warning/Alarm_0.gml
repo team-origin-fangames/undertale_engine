@@ -6,4 +6,4 @@ if (_color == c_red)
 	_color = c_red;
 }
 
-alarm[0]=4;
+alarm[0] = 4;

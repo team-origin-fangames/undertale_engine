@@ -4,14 +4,14 @@ _mode=0;
 _prefix="{gui true}{instant true}{shadow false}{font 1}{scale 2}";
 _inst_instruction=noone;
 _inst_begin=noone;
-_inst_settings=noone;
+//_inst_settings=noone;
+_inst_credits=noone;
 _inst_name=noone;
 _inst_lv=noone;
 _inst_time=noone;
 _inst_room=noone;
 _inst_continue=noone;
 _inst_reset=noone;
-_inst_settings=noone;
 _inst_naming_title=noone;
 _inst_naming_letters=noone;
 _inst_naming_quit=noone;
@@ -43,5 +43,9 @@ _naming_name="";
 _change_inst=noone;
 _change_color=c_white;
 _change_id=-1;
+
+var bgm = audio_create_stream("music/bgm_menu.ogg");
+BGM_Play(0, bgm);
+BGM_SetVolume(0, 1);
 
 event_user(0);

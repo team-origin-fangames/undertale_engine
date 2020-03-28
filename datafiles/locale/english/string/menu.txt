@@ -1,5 +1,6 @@
 "menu.begin"						"Begin Game"
 "menu.settings"						"Settings"
+"menu.credits"						"Credits"
 "menu.continue"						"Continue"
 "menu.reset"						"Reset"
 "menu.reset.true"					"True Reset"

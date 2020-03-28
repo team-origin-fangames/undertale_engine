@@ -15,7 +15,7 @@ if(_menu==0){
 				_menu=1;
 				event_user(0);
 			}else{
-				room_goto(room_settings);
+				room_goto(room_credits);
 			}
 		}
 	}else{

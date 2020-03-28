@@ -1,6 +1,5 @@
-var inst = Battle_CreateBone()
-
-
+Battle_CreateBoneWallLeft(50, 40, 200);
+Battle_CreateBoneWallRight(50, 40, 200);
 
 /*var process = 0;
 var number = 20;

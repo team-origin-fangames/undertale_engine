@@ -7,7 +7,8 @@
         "6a8421d1-d058-4e25-8521-9175030645ec",
         "5d0ccf82-50be-4c17-8424-263e3a942532",
         "b245d543-313e-4e55-a212-1fa3140fcbe4",
-        "7f9ac8d7-74ff-4413-9440-5df72e12bd1a"
+        "7f9ac8d7-74ff-4413-9440-5df72e12bd1a",
+        "17a5ac8e-2610-437a-8714-5ea3bc349a4c"
     ],
     "filterType": "GMObject",
     "folderName": "Soul",

@@ -3,6 +3,7 @@ var_name="";
 shake_distance=0;
 shake_speed=0;
 shake_random=false;
+delay = 0;
 shake_decrease=1;
 _shake_base=undefined;
 _shake_pos=0;

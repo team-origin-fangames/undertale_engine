@@ -1,0 +1,12 @@
+draw_sprite_ext(spr_gbsansfight_logo, 0, 320, _logo_part_0_y, 2, 2, 0, c_white, _logo_part_0_alpha);//202
+draw_sprite_ext(spr_gbsansfight_logo, 1, _logo_part_1_x, 250, 2, 2, 0, c_white, 1); //284
+draw_sprite_ext(spr_gbsansfight_logo, 2, _logo_part_2_x, 290, 2, 2, 0, c_white, 1); //600
+
+if (_hint)
+{
+	draw_set_font(font_crypt_of_tomorrow);
+	draw_set_halign(fa_middle);
+	draw_set_color(c_gray);
+	draw_text_ext_transformed(320, 360, "[PRESS Z OR ENTER]", 9, -1, 2, 2, 0);
+	draw_set_halign(fa_left);
+}
