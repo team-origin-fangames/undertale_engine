@@ -8,6 +8,7 @@
 "font.dialog.1.space.x"		"0"
 "font.dialog.space.y"		"0"
 
+
 "font.menu.0"		"determination_sans"
 "font.menu.0.scale.x"		"1"
 "font.menu.0.scale.y"		"1"
@@ -16,7 +17,7 @@
 "font.menu.1.scale.x"		"1"
 "font.menu.1.scale.y"		"1"
 "font.menu.1.space.x"		"0"
-"font.menu.space.y"		"0"
+"font.menu.space.y"			"0"
 
 "font.battle.0"		"dotumche"
 "font.battle.0.scale.x"		"1"
@@ -26,4 +27,11 @@
 "font.battle.1.scale.x"		"1"
 "font.battle.1.scale.y"		"1"
 "font.battle.1.space.x"		"0"
-"font.battle.space.y"		"0"
+"font.battle.space.y"			"0"
+
+"font.sans.0"		"chunkydunk"
+"font.sans.0.scale.x"			"1"
+"font.sans.0.scale.y"			"1"
+"font.sans.0.space.x"		"0"
+"font.sans.0.space.y"		"0"
+

@@ -1,6 +1,5 @@
 event_inherited();
 
-//临时的, 不知道写哪 = =
 // Player Settings
 Player_SetName("Lasa");
 Player_SetLv(19);
@@ -11,7 +10,7 @@ Player_SetHpMax(92);
 var bgm = audio_create_stream("music/bgm_battle.ogg");
 BGM_Play(1, bgm);
 var inst = instance_create_depth(0, 0, 0, battle_popup_message);
-inst._text = "Now Playing: idk the track name = =";
+inst._text = "Now Playing: music/bgm_battle.ogg";
 
 // Head Variables
 _head_init_x = 0;
@@ -76,7 +75,10 @@ _turn = 0;
 var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
 inst.face_id = 0;
 
-// Start Recording
+//Always on Board
+_on_board = true;
+
+// Demo Recording Start
 if(!Demo_IsPlaying()){
 	Demo_AddInput(INPUT.UP);
 	Demo_AddInput(INPUT.DOWN);
@@ -85,15 +87,4 @@ if(!Demo_IsPlaying()){
 	Demo_AddInput(INPUT.CONFIRM);
 	Demo_AddInput(INPUT.CANCEL);
 	Demo_StartRecording();
-}
-
-// Afterimage Effect Variables
-_afterimage = true;
-_afterimage_number = 5;
-_afterimage_time = 2;
-for (_part = 0; _part < 4; _part = _part + 1)
-{
-	_afterimage_part_x[_part] = ds_list_create();
-	_afterimage_part_y[_part] = ds_list_create();
-	_afterimage_part_angle[_part] = ds_list_create();
 }

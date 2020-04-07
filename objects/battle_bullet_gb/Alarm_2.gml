@@ -1,5 +1,5 @@
 Anim_Create(id, "image_index", 0, 0, 3, 2, 6);
-Anim_Create(id, "_beam_scale", 0, 0, 0, _beam_scale_init, 8);
+Anim_Create(id, "_beam_scale", 0, 0, 0, _beam_scale_default, 8);
 
 audio_stop_sound(snd_gb_fire);
 audio_play_sound(snd_gb_fire, 0, 0);

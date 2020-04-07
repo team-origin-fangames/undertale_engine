@@ -249,26 +249,16 @@ switch (_state)
 
 // Handle Body Animation Loop
 var body_number = sprite_get_number(_body_sprite);
-_body_image = _body_image + _body_speed;
-if (_body_image >= body_number)
-{
-	if (_body_loop) 
-	{
-		_body_image = 0;
-	}else{
-		_body_image = body_number - 1;
-		_body_speed = 0;
-	}
-}
+_body_image = body_number * _swing_sine / 60;
 
 //Handle Character Swings
 if (_swing)
 {
 	_swing_sine = _swing_sine + 1;
-	_head_y = sin(_swing_sine * 0.1) * 0.5;
-	_body_y = sin(_swing_sine * 0.1) * 1.5;
-	_tail_y = sin(_swing_sine * 0.1) * 0.5;
-	_tail_angel = sin(_swing_sine * 0.1) * 5;
+	_head_y = sin(_swing_sine / 60 * pi * 2) * 0.5;
+	_body_y = sin(_swing_sine / 60 * pi * 2) * 1.5;
+	_tail_y = sin(_swing_sine / 60 * pi * 2) * 0.5;
+	_tail_angel = sin(_swing_sine / 60 * pi * 2) * 5;
 }else{
 	_swing_sine = 0;
 }
@@ -289,9 +279,10 @@ if (!_head_blink)
 }
 
 // Always Stand on Board
-y = battle_board.y - battle_board.up - battle_board.thickness_frame - 4;
+if (_on_board)
+{
+	y = battle_board.y - battle_board.up - battle_board.thickness_frame - 4;
+}
 
 //Handle Emotion
 _head_image = face_enemy_sans.emotion;
-
-//Handle Difficulty System
