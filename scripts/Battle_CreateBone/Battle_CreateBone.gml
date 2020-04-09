@@ -66,3 +66,5 @@ inst._auto_destroy = bone_auto_destroy;
 inst._auto_destroy_direction = bone_auto_destroy_direction;
 inst._rotate = bone_rotate;
 inst._rotate_angle = bone_rotate_angle;
+
+return inst;

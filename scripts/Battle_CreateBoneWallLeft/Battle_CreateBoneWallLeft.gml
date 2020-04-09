@@ -6,6 +6,7 @@ var bone_length = argument[0];
 var bone_delay = argument[1];
 var bone_existence_time = argument[2];
 var bone_type = BATTLE_BULLET_TYPE.NORMAL;
+
 if (argument_count >= 4)
 {
 	bone_type = argument[3];
