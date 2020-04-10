@@ -1,0 +1,8 @@
+"dialog.multiverse.sans.met.0"		"lol"
+"dialog.multiverse.sans.met.1"		"lol"
+"dialog.multiverse.sans.met.2"		"lol"
+"dialog.multiverse.sans.met.3"		"lol"
+"dialog.multiverse.sans.met.4"		"lol"
+"dialog.multiverse.sans.met.5"		"lol"
+"dialog.multiverse.sans.met.default"	"lol"
+"dialog.multiverse.sans.met.ready"	"wwwww"

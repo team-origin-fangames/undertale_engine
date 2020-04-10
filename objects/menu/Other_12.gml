@@ -3,7 +3,9 @@ if(_mode==0){
 	_change_inst=_inst_begin;
 	_change_color=(_choice==0 ? c_yellow : c_white);
 	event_user(1);
-	_change_inst=_inst_settings;
+	/* _change_inst=_inst_settings;
+	_change_color=(_choice==1 ? c_yellow : c_white); */
+	 _change_inst=_inst_credits;
 	_change_color=(_choice==1 ? c_yellow : c_white);
 	event_user(1);
 }else{

@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "0219dedf-6df0-4f18-b6c2-2d1a0c93eabb",
-            "Value": {
-                "id": "f258c409-2da3-4557-9194-903d8611250b",
-                "resourcePath": "sprites\\spr_credits_ouhuang\\spr_credits_ouhuang.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "0235428a-dad9-42f6-ab57-a1447cffcef5",
             "Value": {
                 "id": "5e428a04-4ade-4759-8224-5f18c80e0e09",
@@ -132,14 +124,6 @@
                 "id": "c27c1c64-8dc1-4164-a940-ead7d40a71bc",
                 "resourcePath": "datafiles_yy\\locale\\english\\sprite\\battle_button_fight.ini.yy",
                 "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "041c38a5-d091-47bb-a697-832e6d9bf5c5",
-            "Value": {
-                "id": "0ec141ba-c32a-4229-af8d-103088189510",
-                "resourcePath": "sprites\\spr_credits_directorma\\spr_credits_directorma.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -484,14 +468,6 @@
                 "id": "52977adf-faac-4489-97d2-a12a45879ed1",
                 "resourcePath": "views\\12928ffa-b979-42f1-886a-1f7067014dd9.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "13457ac6-c49a-44ac-8fc8-29971761e7bd",
-            "Value": {
-                "id": "99a38273-2159-4d33-b698-ab5e6d18e2c1",
-                "resourcePath": "sprites\\spr_bubble\\spr_bubble.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1431,14 +1407,6 @@
             }
         },
         {
-            "Key": "37914c8d-e0dd-4cba-a4ee-6a5475bbdd54",
-            "Value": {
-                "id": "53c86ba0-1019-486a-9a5e-d6b346a293f5",
-                "resourcePath": "views\\37914c8d-e0dd-4cba-a4ee-6a5475bbdd54.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "37a35f00-d496-4e9b-a512-627d26db3a98",
             "Value": {
                 "id": "815e8a17-eed8-40b2-8633-577537e9a021",
@@ -1828,14 +1796,6 @@
                 "id": "e0670623-219e-47e1-b7e6-5c5dc3a52133",
                 "resourcePath": "scripts\\Input_IsHeld\\Input_IsHeld.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "4c648614-9791-46a1-84a7-2691365c1804",
-            "Value": {
-                "id": "a7ff4e01-0a1e-43d3-b58a-21b5f7c394cc",
-                "resourcePath": "objects\\bubble\\bubble.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -5623,14 +5583,6 @@
             }
         },
         {
-            "Key": "edb51a32-2b58-465c-9494-deea80869eaa",
-            "Value": {
-                "id": "2f09939a-81e1-4387-bcc8-0e00a19d1cab",
-                "resourcePath": "sprites\\spr_credits_lasagnaaa\\spr_credits_lasagnaaa.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "eeabcff6-c88b-41ce-9950-95f43cd8ae17",
             "Value": {
                 "id": "139f7373-cf30-4e5c-8370-bda2ba975289",
@@ -5652,6 +5604,14 @@
                 "id": "3a3e932b-eb89-4029-8dd6-e12ac222f14e",
                 "resourcePath": "scripts\\Battle_SetSoul\\Battle_SetSoul.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f015c014-112b-45f0-8ea5-f93c8dbe78c8",
+            "Value": {
+                "id": "4ebf6290-252d-4550-8b1b-7eb0c236245c",
+                "resourcePath": "shaders\\shd_shadow\\shd_shadow.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -5860,14 +5820,6 @@
                 "id": "41e3a360-f9cc-4353-bbc6-65ea6917e3cb",
                 "resourcePath": "objects\\logo_gbsansfight\\logo_gbsansfight.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f6812ac6-d35f-436e-9cdb-5c35a9c80bc5",
-            "Value": {
-                "id": "90445aff-053e-4a3a-8500-193bd1adc181",
-                "resourcePath": "sprites\\spr_credits_tml\\spr_credits_tml.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -6201,8 +6153,8 @@
         "cb68ead8-9812-47da-9dad-eb22ddbd7458",
         "2203a4c7-c09d-408f-980c-b29bf422a079",
         "8caaea77-289d-4a9f-a640-7cc75c992f25",
-        "2067a5f5-12af-4786-8258-48a44de8f306",
         "e56fb2dc-d585-42ff-8f8e-e13e0446c312",
+        "2067a5f5-12af-4786-8258-48a44de8f306",
         "8fb7e0df-cb79-4faa-9a13-d3e6780e4a9e",
         "c478289b-28db-4ac0-b892-93d45d10a876",
         "ea8dbbbb-5fde-41e8-9332-445072cf338c",

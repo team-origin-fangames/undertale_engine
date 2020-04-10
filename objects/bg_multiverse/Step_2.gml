@@ -1,0 +1,1 @@
+x = xstart + camera.x - (camera.x * 0.5);

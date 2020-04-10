@@ -44,6 +44,7 @@ enum FLAG_STATIC{
 
 #region dynamic
 enum FLAG_DYNAMIC{
+	SANS_MET
 };
 #endregion
 

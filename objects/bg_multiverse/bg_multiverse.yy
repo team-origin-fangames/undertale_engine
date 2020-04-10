@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "bg_multiverse",
     "eventList": [
-        
+        {
+            "id": "717d8287-908e-4802-9ec3-b72fd2187d22",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "abb95576-370a-4d48-bb0f-6d2cacda3b26"
+        },
+        {
+            "id": "3f642edf-d88b-4b31-8af0-0bab2ed32f44",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 3,
+            "m_owner": "abb95576-370a-4d48-bb0f-6d2cacda3b26"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
