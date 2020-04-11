@@ -1,19 +1,19 @@
-var hit = Player_GetHit();
+var hit = Flag_Get(FLAG_TYPE.DYNAMIC, FLAG_DYNAMIC.HIT);
 
 if (hit <= 1)
 {
-	Battle_SetDifficulty(BATTLE_DIFFICULTY.HARD);
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.DIFFICULTY, BATTLE_DIFFICULTY.HARD);
 }
 
 if (hit > 1 && hit <= 4)
 { 
-	Battle_SetDifficulty(BATTLE_DIFFICULTY.NORMAL);
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.DIFFICULTY, BATTLE_DIFFICULTY.NORMAL);
 }
 
 if (hit > 4)
 {
-	Battle_SetDifficulty(BATTLE_DIFFICULTY.EASY);
+	Flag_Set(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.DIFFICULTY, BATTLE_DIFFICULTY.EASY);
 }
 
-Player_SetHit(0);
+Flag_Set(FLAG_TYPE.DYNAMIC, FLAG_DYNAMIC.HIT, 0);
 return true;

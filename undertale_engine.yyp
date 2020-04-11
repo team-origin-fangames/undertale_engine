@@ -1111,6 +1111,14 @@
             }
         },
         {
+            "Key": "2d45ab95-5542-445c-a4d0-a8e058ab9d6c",
+            "Value": {
+                "id": "e3ab79f3-df17-4e54-9b8a-c080947c1804",
+                "resourcePath": "notes\\note0.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "2d564bfb-178f-4ad9-a52e-a2a42dcd95e8",
             "Value": {
                 "id": "6c0dc422-3dcf-473a-aefc-075cb3d2ba2d",
@@ -4791,6 +4799,14 @@
             }
         },
         {
+            "Key": "cb5ed0bc-2fc5-4876-8962-9553976d4dec",
+            "Value": {
+                "id": "d6880eab-ba4d-4e08-b5ba-02fa2a799df3",
+                "resourcePath": "datafiles_yy\\music\\bgm_credits.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "cb68ead8-9812-47da-9dad-eb22ddbd7458",
             "Value": {
                 "id": "1d1ae2b6-d497-4335-a251-1c40a689d3c2",
@@ -5228,6 +5244,14 @@
                 "id": "3c6ae0a3-6643-40ae-81e7-85e374813ec7",
                 "resourcePath": "scripts\\Battle_GetDifficulty\\Battle_GetDifficulty.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "de2cba57-5203-4577-bfab-5eea355fecd8",
+            "Value": {
+                "id": "68a863e7-55e1-4be3-9d04-18579bc96636",
+                "resourcePath": "datafiles_yy\\music\\bgm_gameover.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

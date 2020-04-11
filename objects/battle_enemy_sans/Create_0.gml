@@ -5,10 +5,10 @@ debug_message = instance_create_depth(0, 0, 0, battle_popup_message);
 debug_message._time = - 1;
 
 // Player Settings
-Player_SetName("Lasa");
-Player_SetLv(19);
-Player_SetHp(92);
-Player_SetHpMax(92);
+Player_SetName("Lasa");  
+Player_LvUp(11);
+Player_SetHp(Player_GetHpMax());
+Player_SetLv("??");
 
 // Play BGM
 var bgm = audio_create_stream("music/bgm_battle.ogg");
