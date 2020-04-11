@@ -37,14 +37,15 @@ enum FLAG_STATIC{
 	TIME,
 	BOX,
 	BOX_END=FLAG_STATIC.BOX+20-1,
-	HIT,
-	DIFFICULTY
+	DEATH
 };
 #endregion
 
 #region dynamic
 enum FLAG_DYNAMIC{
-	SANS_MET
+	SANS_MET,
+	HIT,
+	DIFFICULTY
 };
 #endregion
 

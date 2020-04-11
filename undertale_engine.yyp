@@ -1119,6 +1119,14 @@
             }
         },
         {
+            "Key": "2dc683bf-37fc-4541-b35c-f30b6d685ec0",
+            "Value": {
+                "id": "92329c2a-2b67-4832-8085-392a117c4219",
+                "resourcePath": "scripts\\Player_GetDeath\\Player_GetDeath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2e03b994-5ddb-4afb-8cb6-1d9535a86dda",
             "Value": {
                 "id": "5830243b-4610-4fff-9012-b80390909dd8",
@@ -1340,6 +1348,14 @@
                 "id": "81f93a3f-3d28-4186-b171-af5514af97ad",
                 "resourcePath": "sprites\\spr_light_circle\\spr_light_circle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "347f6ee5-0bec-4de3-94bd-34025ea14d90",
+            "Value": {
+                "id": "f092d92f-99aa-4745-ac3c-e67b16702e4b",
+                "resourcePath": "scripts\\Player_SetDeath\\Player_SetDeath.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6335,6 +6351,8 @@
         "07f5542b-95fb-496b-a098-b421ca5dd453",
         "245c350b-b7e6-4ab6-8d76-205fba082d60",
         "f11b201b-928d-4871-8a85-03751db0010f",
+        "2dc683bf-37fc-4541-b35c-f30b6d685ec0",
+        "347f6ee5-0bec-4de3-94bd-34025ea14d90",
         "9f8cca73-7064-4df7-a0d9-183eb8469fd9",
         "73f3215e-7994-434d-b78f-77ff4f280a80",
         "c1099f20-0cfa-4dfd-9b77-8af3d002680f",

@@ -6,5 +6,6 @@ with (inst)
 	image_xscale = image_xscale * ((res_idle_flip_x[dir] && sign(image_xscale) == 1) || (!res_idle_flip_x[dir] && sign(image_xscale) == - 1) ? -1 : 1);
 	alarm[0] = 1;
 }
+char_player.dir = DIR.RIGHT;
 
 alarm[3] = 10;

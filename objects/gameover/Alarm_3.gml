@@ -1,5 +1,4 @@
-Flag_Clear(FLAG_TYPE.STATIC);
-Flag_Custom();
+Flag_Clear(FLAG_TYPE.DYNAMIC);
 switch (Player_GetTextTyperChoice())
 {
 	case 0:

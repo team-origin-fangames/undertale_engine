@@ -10,6 +10,6 @@ with (inst)
 }
 
 Anim_Create(inst, "x", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, inst.x, - 60, 240);
-Anim_Create(inst, "shadow_value", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, inst.shadow_value, - 1, 190);
+Anim_Create(inst, "shadow_value", ANIM_TWEEN.CUBIC, ANIM_EASE.OUT, inst.shadow_value, - 1, 170);
 
-alarm[2] = 190; 
+alarm[2] = 170; 

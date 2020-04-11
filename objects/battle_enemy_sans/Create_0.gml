@@ -1,5 +1,9 @@
 event_inherited();
 
+//Debug
+debug_message = instance_create_depth(0, 0, 0, battle_popup_message);
+debug_message._time = - 1;
+
 // Player Settings
 Player_SetName("Lasa");
 Player_SetLv(19);
@@ -9,8 +13,8 @@ Player_SetHpMax(92);
 // Play BGM
 var bgm = audio_create_stream("music/bgm_battle.ogg");
 BGM_Play(1, bgm);
-var inst = instance_create_depth(0, 0, 0, battle_popup_message);
-inst._text = "Now Playing: music/bgm_battle.ogg";
+//var inst = instance_create_depth(0, 0, 0, battle_popup_message);
+//inst._text = "Now Playing: music/bgm_battle.ogg";
 
 // Head Variables
 _head_init_x = 0;

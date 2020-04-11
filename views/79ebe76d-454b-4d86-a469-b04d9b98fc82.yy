@@ -17,7 +17,9 @@
         "78eb2428-ffd4-4cbd-95c5-3921bf9e2964",
         "07f5542b-95fb-496b-a098-b421ca5dd453",
         "245c350b-b7e6-4ab6-8d76-205fba082d60",
-        "f11b201b-928d-4871-8a85-03751db0010f"
+        "f11b201b-928d-4871-8a85-03751db0010f",
+        "2dc683bf-37fc-4541-b35c-f30b6d685ec0",
+        "347f6ee5-0bec-4de3-94bd-34025ea14d90"
     ],
     "filterType": "GMScript",
     "folderName": "Player",
