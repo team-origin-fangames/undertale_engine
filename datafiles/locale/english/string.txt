@@ -4,3 +4,4 @@
 ./string/menu.txt
 ./string/font.txt
 ./string/dialog.txt
+./string/gameover.txt

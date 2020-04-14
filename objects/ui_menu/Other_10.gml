@@ -52,15 +52,15 @@ if(_menu==3){
 		var weapon=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_WEAPON));
 		var armor=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_ARMOR));
 		var gold=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
-		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` "+string(lv)+"}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+Lang_GetString("ui.menu.stat.0");
+		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` `"+string(lv)+"`}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+Lang_GetString("ui.menu.stat.0");
 	}
 	if(!instance_exists(_inst_stat_1)){
 		_inst_stat_1=instance_create_depth(188+6+190,52+6+182,0,text_typer);
 		var xp=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.EXP);
 		var lv=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV);
-		var lv_xp=Player_GetLvExp(lv+1);
+		var lv_xp = (lv != "??" ? Player_GetLvExp(lv+1) : - 1);
 		var kills=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.KILLS);
-		_inst_stat_1.text=_prefix+"{define `EXP` "+string(xp)+"}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+Lang_GetString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+Lang_GetString("ui.menu.stat.2") : "");
+		_inst_stat_1.text=_prefix+"{define `EXP` `"+string(xp)+"`}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+Lang_GetString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+Lang_GetString("ui.menu.stat.2") : "");
 	}
 }else{
 	if(instance_exists(_inst_stat_0)){

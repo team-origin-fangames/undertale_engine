@@ -15,6 +15,7 @@ _beam_collision_scale = 1.5;
 _beam_scale = 0;
 _beam_alpha = 1;
 _beam_sine = 0;
+_karma_enabled = Player_IsKarmaEnabled();
 
 depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH;
 image_speed = 0;

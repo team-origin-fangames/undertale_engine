@@ -1,5 +1,3 @@
-debug_message._text = string(Player_GetDeath());
-
 // Handle State Machine
 switch (_state)
 {

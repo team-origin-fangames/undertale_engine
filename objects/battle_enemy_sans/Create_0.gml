@@ -1,24 +1,14 @@
 event_inherited();
 
-//Debug
-debug_message = instance_create_depth(0, 0, 0, battle_popup_message);
-debug_message._time = - 1;
-
-// Player Settings
-Player_SetName("Lasa");  
-Player_LvUp(11);
-Player_SetHp(Player_GetHpMax());
-Player_SetLv("??");
-
-// Play BGM
+// BGM Play 
 var bgm = audio_create_stream("music/bgm_battle.ogg");
 BGM_Play(1, bgm);
-//var inst = instance_create_depth(0, 0, 0, battle_popup_message);
-//inst._text = "Now Playing: music/bgm_battle.ogg";
+var inst = instance_create_depth(0, 0, 0, battle_popup_message);
+inst._text = "Now Playing: Twinkling Ray (Battle Theme)";
 
 // Head Variables
 _head_init_x = 0;
-_head_init_y = -41;
+_head_init_y = - 41;
 _head_sprite = spr_enemy_sans_head;
 _head_x = 0;
 _head_y = 0;
@@ -28,7 +18,7 @@ _blink_not_started = true;
 
 // Body Variables
 _body_init_x = 0;
-_body_init_y = -51;
+_body_init_y = - 51;
 _body_sprite = spr_enemy_sans_body_swing;
 _body_x = 0;
 _body_y = 0;
@@ -38,7 +28,7 @@ _body_loop = true;
 
 // Tail Varibles
 _tail_init_x = 0;
-_tail_init_y = -39;
+_tail_init_y = - 39;
 _tail_init_angel = 0;  
 _tail_x = 0;
 _tail_y = 0;
@@ -77,7 +67,7 @@ _turn = 0;
 
 // Emotion Object Create
 var inst = instance_create_depth(0, 0, 0, face_enemy_sans);
-inst.face_id = 0;
+inst.face_id = 1;
 
 //Always on Board
 _on_board = true;
@@ -91,4 +81,21 @@ if(!Demo_IsPlaying()){
 	Demo_AddInput(INPUT.CONFIRM);
 	Demo_AddInput(INPUT.CANCEL);
 	Demo_StartRecording();
+}
+
+// Player Infomation Set
+switch (Sans_GetPhase())
+{
+	case 0:
+		Player_LvUp(11);
+		Player_SetHp(Player_GetHpMax());
+		show_debug_message(Player_GetHpMax());
+		Player_SetLv("??");
+		Player_SetExp("??");
+		break;
+		
+	case 1:
+		Player_LvUp(20);
+		Player_SetHp(Player_GetHpMax());
+		break;
 }

@@ -54,6 +54,4 @@ Console_OutputLine("Game Version: "+GAME_VERSION);
 
 room_goto_next();
 
-window_set_caption(GAME_NAME);
-
-randomize();
+window_set_caption(GAME_NAME);  

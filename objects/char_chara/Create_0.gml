@@ -14,7 +14,23 @@ res_move_sprite[DIR.RIGHT] = spr_char_chara_move_right;
 res_idle_flip_x[DIR.LEFT] = false;
 res_move_flip_x[DIR.LEFT] = false;
 
+switch (Sans_GetPhase())
+{
+	case 0:
+		Player_LvUp(11);
+		Player_SetHp(Player_GetHpMax());
+		Player_SetLv("??");
+		Player_SetExp("??");
+		break;
+		
+	case 1:
+		Player_LvUp(20);
+		Player_SetHp(Player_GetHpMax());
+		break;
+}
+
+if (room == room_multiverse)
+{
 var bgm = audio_create_stream("music/bgm_multiverse.ogg");
-BGM_Play(2, bgm);
-var inst = instance_create_depth(0, 0, 0, battle_popup_message);
-inst._text = "Now Playing: music/bgm_multiverse.ogg";
+BGM_Play(0, bgm);
+}

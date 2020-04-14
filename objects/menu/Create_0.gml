@@ -46,6 +46,5 @@ _change_id=-1;
 
 var bgm = audio_create_stream("music/bgm_menu.ogg");
 BGM_Play(0, bgm);
-BGM_SetVolume(0, 1);
 
 event_user(0);

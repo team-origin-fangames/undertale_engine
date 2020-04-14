@@ -13,3 +13,5 @@ _auto_destroy = true;
 _auto_destroy_direction = DIR.UP;
 _rotate = false;
 _rotate_angle = 0;
+
+_karma_enabled = Player_IsKarmaEnabled();

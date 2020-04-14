@@ -1,5 +1,7 @@
 event_inherited();
 
+char_id = 2;
+
 shadow = true;
 shadow_value = 1;
 uniform_value = shader_get_uniform(shd_shadow, "value");

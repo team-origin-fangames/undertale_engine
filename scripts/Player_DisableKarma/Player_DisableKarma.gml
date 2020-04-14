@@ -1,0 +1,3 @@
+Flag_Set(FLAG_TYPE.DYNAMIC, FLAG_DYNAMIC.KARMA_ENABLED, false);
+
+return true;

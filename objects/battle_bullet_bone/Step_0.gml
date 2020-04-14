@@ -99,3 +99,11 @@ if (_rotate)
 {
 	_direction = _direction + _rotate_angle;
 }
+
+if (_direction == 90 || _direction == - 90)
+{
+	karma = 5;
+}else
+{
+	karma = 6;
+}

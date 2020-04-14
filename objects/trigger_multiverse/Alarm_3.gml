@@ -3,7 +3,7 @@ var sans_met = Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.SANS_MET);
 switch (sans_met)
 {
 	case 0:
-		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.0"));
+		Dialog_Add("{face 1}{face_emotion 6}{voice 2}kksk");
 		Dialog_Start();
 		_ready_first = true;
 		break;

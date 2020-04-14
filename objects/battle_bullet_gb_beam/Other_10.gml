@@ -1,3 +1,11 @@
 ///@desc Soul Collision
-Player_Hurt(10);
+if (_karma_enabled)
+{
+	Player_HurtKarma();
+}else
+{
+	Battle_CallSoulEventHurt();
+	Player_Hurt(6);
+}
+
 event_inherited();

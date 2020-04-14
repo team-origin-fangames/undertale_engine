@@ -1,0 +1,2 @@
+"gameover.choice.retry"		"Retry"
+"gameover.choice.watchreplay"	"Watch Replay"

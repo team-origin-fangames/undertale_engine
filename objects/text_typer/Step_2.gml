@@ -143,27 +143,30 @@ if(_char_linked!=-1){
 }
 
 if(override_alpha_enabled||override_color_text_enabled){
-	var proc=0;
-	repeat(ds_list_size(_list_inst)){
-		var INST=ds_list_find_value(_list_inst,proc);
-		if(instance_exists(INST)){
-			if(override_alpha_enabled){
-				INST.alpha=override_alpha;
-			}
-			if(override_color_text_enabled){
-				if(is_array(override_color_text)){
-					INST.color_text[0]=override_color_text[0];
-					INST.color_text[1]=override_color_text[1];
-					INST.color_text[2]=override_color_text[2];
-					INST.color_text[3]=override_color_text[3];
-				}else{
-					INST.color_text[0]=override_color_text;
-					INST.color_text[1]=override_color_text;
-					INST.color_text[2]=override_color_text;
-					INST.color_text[3]=override_color_text;
+	if (ds_exists(_list_inst, ds_type_list))
+	{
+		var proc=0;
+		repeat(ds_list_size(_list_inst)){
+			var INST=ds_list_find_value(_list_inst,proc);
+			if(instance_exists(INST)){
+				if(override_alpha_enabled){
+					INST.alpha=override_alpha;
+				}
+				if(override_color_text_enabled){
+					if(is_array(override_color_text)){
+						INST.color_text[0]=override_color_text[0];
+						INST.color_text[1]=override_color_text[1];
+						INST.color_text[2]=override_color_text[2];
+						INST.color_text[3]=override_color_text[3];
+					}else{
+						INST.color_text[0]=override_color_text;
+						INST.color_text[1]=override_color_text;
+						INST.color_text[2]=override_color_text;
+						INST.color_text[3]=override_color_text;
+					}
 				}
 			}
+			proc+=1;
 		}
-		proc+=1;
 	}
 }

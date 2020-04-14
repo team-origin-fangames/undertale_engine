@@ -9,7 +9,8 @@
         "c4950300-e752-4973-9ad3-c1c5819a3524",
         "dcc4d4a5-223e-4b13-8614-e1873d1bee54",
         "6268f67b-e2f2-48c9-a96d-6e23b2f545a1",
-        "ac0ce3c2-9a56-4701-94c1-a890bfff4a82"
+        "ac0ce3c2-9a56-4701-94c1-a890bfff4a82",
+        "e196fceb-1047-4d9c-8c41-ad0c579fbd00"
     ],
     "filterType": "GMObject",
     "folderName": "Character",
