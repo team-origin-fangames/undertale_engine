@@ -1,4 +1,4 @@
 ./font/dotumche.ini
 ./font/determination_mono.ini
 ./font/determination_sans.ini
-./font/chunkydunk.ini
+./font/comic_sans_ms.ini

@@ -10,8 +10,8 @@
         "bc38ec8e-670d-4ceb-8857-c2a497b7d5d9",
         "a823a378-8884-4cfc-bdd5-06cbf6b4d022",
         "45825d82-85a0-4398-99d3-52287dc119f2",
-        "632e2d68-adc1-4a9f-9acc-d08303048ace",
-        "a22d2604-5db0-424b-9b45-f9f242bfcd41"
+        "2f9f7c54-c2ec-479b-a212-660b5fb2235e",
+        "a33eca74-0e84-45c5-8a91-2c7bb56859c5"
     ],
     "filterType": "GMIncludedFile",
     "folderName": "font",

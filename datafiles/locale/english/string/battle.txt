@@ -7,3 +7,21 @@
 "battle.result.fled.3"					"* Don't slow me down."
 "battle.result.fled.reward"				"* Ran away with {insert EXP} EXP&  and {insert GOLD} GOLD."
 "battle.result.lv_up"					"* Your LOVE increased."
+
+"battle.sans.name"						"* GB!Sans"
+"battle.sans.act.check"					"* Check"
+"battle.sans.act.talk"					"* Talk"
+"battle.sans.act.flirt"					"* Flirt"
+"battle.sans.act.pet"					"* Pet"
+
+"battle.sans.act.check.dialog.0"		"* GB!Sans - ATK 6 DEF 10{sleep 10}&* Traveler in the multiverse.{sleep 10}&* Looks like he is in a hurry."
+"battle.sans.act.check.dialog.1"		"* GB!Sans - ATK 6 DEF{sleep 1} {sprite `spr_infinitysign`}{sleep 10}&* Judge of your humanity.{sleep 10}&* Staring at you coldly."
+"battle.sans.act.check.dialog.2"		"* GB!Sans - ATK 0 DEF 0{sleep 10}&* Enemy who put down all defense.{sleep 10}&* Is smiling friendly to you"
+"battle.sans.act.check.dialog.3"		"* GB!Sans - ATK 2 DEF{sleep 1} {sprite `spr_infinitysign`}{sleep 10}&* The dragon of bones.{sleep 10}&* Has powerful energy in his body."
+
+"battle.sans.act.talk.0"
+"battle.sans.act.talk.1"
+
+"battle.sans.dialog.0"					"GB!Sans"
+"battle.sans.dialog_enemy.0"			"{font FONT.SANS}{voice VOICE.SANS}{face 2}balablabla..."
+

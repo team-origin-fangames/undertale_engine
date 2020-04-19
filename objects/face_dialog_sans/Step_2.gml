@@ -21,7 +21,7 @@ if (talking)
 				break;
 		}
 	}
-	_talking_timer = _talking_timer + 0.2;
+	_talking_timer = _talking_timer + 0.1;
 }else
 {
 	_mouth_image = 0;

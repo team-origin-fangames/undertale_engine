@@ -7,6 +7,7 @@
 "item.drop.2"							"* You put the {insert ITEM}&  on the ground and gave it a&  little pat."
 "item.drop.3"							"* You threw the {insert ITEM}&  on the ground like the piece&  of trash it is."
 "item.drop.4"							"* You abandoned the &  {insert ITEM}."
+
 "item.stick.name"						"Stick"
 "item.stick.info"						"* Stick - Weapon AT 0&* Its bark is worse than&  its bite."
 "item.stick.use"						"* You threw the stick away.{sleep 20}&* Then picked it back up."
@@ -22,3 +23,35 @@
 "item.faded_ribbon.name"				"Faded Ribbon"
 "item.faded_ribbon.name.short"			"Ribbon"
 "item.faded_ribbon.info"				"* Faded Ribbon - Armor DF 3&* If you're cuter,{sleep 20} monsters&  won't hit you as hard."
+
+"item.tml.name"							"TML"
+"item.tml.info"							"* TML - Heals 20 HP&* The cute sylveon will heal you&  with magic."
+"item.tml.use"							"* You released TML from pokeball."
+"item.tml.drop"							"* You released TML from pokeball.&* TML said goodbye to you and ran&  away."
+
+"item.pie.name"							"Pie"
+"item.pie.info"							"* Pie - Heals All HP&* Decorated with cream and candy,&  only one slice."
+"item.pie.use"							"* Cold but still tasty."
+
+"item.nice_cream.name"					"Nice Cream"
+"item.nice_cream.info"					"* Nice Cream - Heals 15 HP&* Instead of a joke, the wrapper&  says something nice."
+"item.nice_cream.use"					"* It tastes really nice."
+
+"item.steak.name"						"Steak"
+"item.steak.info"						"* Steak - Heals 40 HP&* Unlike the face steak, it's made&  of pure meat."
+"item.steak.use"						"* It's a little hard to chew."
+
+"item.banana_pair.name"					"Banana Pair"
+"item.banana_pair.info"					"* Banana Pair - Heals HP&* Paired bananas, paired&  delicious."
+"item.banana_pair.eat"					"one of the bananas"
+
+"item.banana.name"						"Banana"
+"item.banana.info"						"* Banana - Heals HP&* Its friend is already in your&  stomach."
+"item.banana.eat"						"the last banana"
+
+"item.stardust.name"					"Stardust"
+"item.stardust.info"					"* Stardust - Heals 10 HP&* Some sparkling stardust is kept&  in a small bottle."
+"item.stardust.use.0"					"* You opened the bottle to&  release the stardust."
+"item.stardust.use.1"					"* Sparkling stardust start flying&  beside you."
+"item.stardust.use.2"					"* Your SPD increased!"
+"item.stardust.drop"					"* The bottle fell to the ground&  and broke into pieces."

@@ -29,9 +29,13 @@
 "font.battle.1.space.x"		"0"
 "font.battle.space.y"			"0"
 
-"font.sans.0"		"chunkydunk"
+"font.sans.0"		"comic_sans_ms"
 "font.sans.0.scale.x"			"1"
 "font.sans.0.scale.y"			"1"
-"font.sans.0.space.x"		"0"
-"font.sans.0.space.y"		"0"
+"font.sans.0.space.x"		"1"
+"font.sans.1"		"comic_sans_ms"
+"font.sans.1.scale.x"			"1"
+"font.sans.1.scale.y"			"1"
+"font.sans.1.space.x"		"1"
+"font.sans.space.y"		"0"
 

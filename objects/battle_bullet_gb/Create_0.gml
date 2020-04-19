@@ -22,4 +22,5 @@ image_speed = 0;
 image_alpha = 0;
 
 _inst = instance_create_depth(0, 0, 0, battle_bullet_gb_beam);
+_charge = instance_create_depth(0, 0, 0, battle_bullet_gb_charge_controller);
 alarm[0] = 1;

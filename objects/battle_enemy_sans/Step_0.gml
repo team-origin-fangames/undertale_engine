@@ -62,17 +62,17 @@ switch (_state)
 				case 1:
 					_body_x = 3;
 					_tail_x = 3;
-					_tail_angel = -1;
+					_tail_angel = - 1;
 					break;
 
 				case 2:
 					_body_x = 4;
 					_tail_x = 4;
-					_tail_angel = -2;
+					_tail_angel = - 2;
 					break;
 
 				case 3:
-					_body_x = -1;
+					_body_x = - 1;
 					_tail_x = 1;
 					_tail_angel = 1;
 					_body_speed = 0.25;
@@ -81,8 +81,9 @@ switch (_state)
 				case 4:
 					_body_x = 0;
 					_tail_x = 0;
-					_tail_angel = -1;
+					_tail_angel = - 1;
 					_body_speed = 0.15;
+					_swing = true;
 					break;
 			}
 			_state_step += 0.25;
@@ -109,15 +110,15 @@ switch (_state)
 					break;
 
 				case 1:
-					_body_x = -3;
-					_tail_x = -3;
-					_tail_angel = -1;
+					_body_x = - 3;
+					_tail_x = - 3;
+					_tail_angel = - 1;
 					break;
 
 				case 2:
-					_body_x = -4;
-					_tail_x = -4;
-					_tail_angel = -2;
+					_body_x = - 4;
+					_tail_x = - 4;
+					_tail_angel = - 2;
 					break;
 
 				case 3:
@@ -130,8 +131,9 @@ switch (_state)
 				case 4:
 					_body_x = 0;
 					_tail_x = 0;
-					_tail_angel = -1;
+					_tail_angel = - 1;
 					_body_speed = 0.15;
+					_swing = true;
 					break;
 			}
 			_state_step += 0.25;
@@ -171,10 +173,10 @@ switch (_state)
 					break;
 
 				case 3:
-					_head_y = -1;
-					_body_y = -1;
-					_tail_y = -1;
-					_tail_angel = -1;
+					_head_y = - 1;
+					_body_y = - 1;
+					_tail_y = - 1;
+					_tail_angel = - 1;
 					_body_speed = 0.2;
 					break;
 
@@ -184,6 +186,7 @@ switch (_state)
 					_tail_y = 0;
 					_tail_angel = 1;
 					_body_speed = 0.15;
+					_swing = true;
 					break;
 			}
 			_state_step += 0.2;
@@ -210,16 +213,16 @@ switch (_state)
 					break;
 
 				case 1:
-					_body_y = -3;
-					_tail_y = -3;
-					_tail_angel = -1;
+					_body_y = - 3;
+					_tail_y = - 3;
+					_tail_angel = - 1;
 					break;
 
 				case 2:
-					_head_y = -1;
-					_body_y = -4;
-					_tail_y = -4;
-					_tail_angel = -2;
+					_head_y = - 1;
+					_body_y = - 4;
+					_tail_y = - 4;
+					_tail_angel = - 2;
 					break;
 
 				case 3:
@@ -234,8 +237,9 @@ switch (_state)
 					_head_y = 0;
 					_body_y = 0;
 					_tail_y = 0;
-					_tail_angel = -1;
+					_tail_angel = - 1;
 					_body_speed = 0.15;
+					_swing = true;
 					break;
 			}
 			_state_step += 0.2;
@@ -246,10 +250,6 @@ switch (_state)
 	// TODO
 		break;
 }
-
-// Handle Body Animation Loop
-var body_number = sprite_get_number(_body_sprite);
-_body_image = body_number * _swing_sine / 60;
 
 //Handle Character Swings
 if (_swing)
@@ -263,15 +263,37 @@ if (_swing)
 	_swing_sine = 0;
 }
 
-// Handle Eyes Blink
-if (_head_blink && _blink_not_started)
+// Handle Body Animation Loop
+if (_state = SANS_STATE.IDLE)
 {
-	_blink_not_started = false;
+	var body_number = sprite_get_number(_body_sprite);
+	_body_image = body_number * _swing_sine / 60;
+}else
+{
+	_body_image = _body_image + _body_speed;
+	var body_number = sprite_get_number(_body_sprite);
+	if(_body_image >= body_number)
+	{
+		if(_body_loop)
+		{
+			_body_image = 0;
+		}else
+		{
+			_body_image = body_number - 1;
+			_body_speed = 0;
+		}
+	}
+}
+
+// Handle Eyes Blink
+if (_head_blink && !_head_blink_enabled)
+{
+	_head_blink_enabled = true;
 	alarm[0] = 1;
 }
 if (!_head_blink)
 {
-	_blink_not_started = true;
+	_head_blink_enabled = false;
 	face_enemy_sans.emotion = 0;
 	alarm[0] = -1;
 	alarm[1] = -1;

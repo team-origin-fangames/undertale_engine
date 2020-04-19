@@ -12,3 +12,11 @@ if (_beam_scale > 1.2 && _beam_alpha > 0.8)
 	_inst.image_xscale = 0;
 	_inst.image_yscale = 0;
 }
+
+if (instance_exists(_charge))
+{
+	_charge.x = x + lengthdir_x(_scale_y * 8, image_angle);
+	_charge.y = y + lengthdir_y(_scale_y * 8, image_angle);
+	_charge.image_angle = image_angle;
+	_charge._type = _type;
+}

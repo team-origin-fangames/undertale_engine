@@ -3,7 +3,7 @@ var sans_met = Flag_Get(FLAG_TYPE.DYNAMIC,FLAG_DYNAMIC.SANS_MET);
 switch (sans_met)
 {
 	case 0:
-		Dialog_Add("{face 1}{face_emotion 6}{voice 2}kksk");
+		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.0"));
 		Dialog_Start();
 		_ready_first = true;
 		break;
@@ -34,6 +34,24 @@ switch (sans_met)
 		
 	case 5:
 		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.5"));
+		Dialog_Start();
+		_ready_subsequent = true;
+		break;
+		
+	case 6:
+		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.6"));
+		Dialog_Start();
+		_ready_subsequent = true;
+		break;
+		
+	case 7:
+		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.7"));
+		Dialog_Start();
+		_ready_subsequent = true;
+		break;
+		
+	case 8:
+		Dialog_Add(Lang_GetString("dialog.multiverse.sans.met.8"));
 		Dialog_Start();
 		_ready_subsequent = true;
 		break;

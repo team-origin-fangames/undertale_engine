@@ -29,6 +29,13 @@ switch (Sans_GetPhase())
 		break;
 }
 
+_item_list = ds_list_create();
+ds_list_add(_item_list, item_tml, item_pie, item_nice_cream, item_nice_cream, item_steak, item_stardust, item_banana_pair)
+for (var process = 0; process < ds_list_size(_item_list); process = process + 1)
+{
+	Item_Set(process, ds_list_find_value(_item_list, process));
+}
+
 if (room == room_multiverse)
 {
 var bgm = audio_create_stream("music/bgm_multiverse.ogg");

@@ -25,7 +25,7 @@ switch (Player_IsKarmaEnabled())
 		break;
 }
 
-draw_sprite_ext(spr_battle_ui_hp_mask, 0 ,x + 249 ,y + 9, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_battle_ui_hp_mask, 0, x + 241 + Player_GetHpMax() * 1.25,y + 9, - 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_battle_ui_hp_mask, 0 ,x + 247 , y + 9, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_battle_ui_hp_mask, 0, x + 243 + Player_GetHpMax() * 1.25, y + 9, - 1, 1, 0, c_white, 1);
 draw_sprite_ext(spr_pixel, 0, x + 256, y - 3, Player_GetHpMax() * 1.25 - 22, 2, 0, c_white, 1);
 draw_sprite_ext(spr_pixel, 0, x + 256, y + 20, Player_GetHpMax() * 1.25 - 22, 2, 0, c_white, 1);

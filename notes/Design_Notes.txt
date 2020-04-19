@@ -12,6 +12,10 @@ GB!Sans受击, 颤抖,
 视口全白逐渐消失, GB!Sans消失, 
 GB!Sans首先在黑色背景下眼部放光, 然后以龙形出现
 GB!Sans吼叫, 震荡波着色器, 显示出玩家LV为20, HP为99.
-GB!Sans嘲讽玩家, KR启用.
+GB!Sans对话, KR启用, 背景动画启用
 
 第一阶段玩家第一次FIGHT会命中, 此后都为MISS.
+
+TODO
+Sans战斗时的表情问题
+Sans主世界神必消失问题

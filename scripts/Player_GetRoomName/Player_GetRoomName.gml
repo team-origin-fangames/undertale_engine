@@ -7,5 +7,8 @@ switch(ROOM){
 	case -1:
 		name="--";
 		break;
+	case room_multiverse:
+		name="Multiverse";
+		break;
 }
 return name;

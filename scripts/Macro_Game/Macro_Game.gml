@@ -2,7 +2,7 @@
 #macro GAME_NAME "Gaster Blaster!Sans Fight"
 
 //Anything you want, must be a string.
-#macro GAME_AUTHOR "Team Origin"
+#macro GAME_AUTHOR "Lasagnaaa"
 
 //Anything you want, must be a string.
 #macro GAME_VERSION "v0.0.0"

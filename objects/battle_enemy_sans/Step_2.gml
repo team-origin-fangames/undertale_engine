@@ -1,3 +1,4 @@
+// Handle Karma System
 if (Player_IsKarmaEnabled())
 {
 	var player_karma = Player_GetKarma();

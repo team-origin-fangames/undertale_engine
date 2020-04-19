@@ -45,6 +45,7 @@ enum FLAG_STATIC{
 #region dynamic
 enum FLAG_DYNAMIC{
 	SANS_MET,
+	SANS_MISS,
 	HIT,
 	DIFFICULTY,
 	FRIENDLINESS,

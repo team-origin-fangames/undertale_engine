@@ -1,0 +1,2 @@
+Battle_CreateGasterBlaster(battle_soul.x + 20, battle_board.y - 150, battle_soul.x, battle_board.y - 130, 0, - 90, 2, 4);
+Battle_CreateGasterBlaster(battle_board.x + 150, battle_soul.y + 20, battle_board.x + 130, battle_soul.y, - 90, - 180, 2, 2);

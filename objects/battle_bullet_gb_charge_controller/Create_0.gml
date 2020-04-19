@@ -1,0 +1,13 @@
+depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH;
+_type = BATTLE_BULLET_TYPE.NORMAL;
+_existence_time = 30;
+_distance_min = 60;
+_distance_max = 80;
+_spawn_speed = 0.3;
+_part_speed = 1;
+_part_gravity = 0.2;
+_part_xscale = random_range(0.5, 0.8);
+_part_yscale = _part_xscale;
+_part_alpha = random_range(0.8, 1);
+_scale = 1;
+_timer = 0;
