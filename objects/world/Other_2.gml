@@ -53,3 +53,7 @@ Console_OutputLine("Game Version: "+GAME_VERSION);
 //show_debug_overlay(true);
 
 room_goto_next();
+
+window_set_caption(GAME_NAME);
+
+BktGlitch_init();

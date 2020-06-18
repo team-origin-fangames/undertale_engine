@@ -1,5 +1,7 @@
+"battle.menu.act.check"				"* Check"
 "battle.menu.mercy.spare"				"* Spare"
 "battle.menu.mercy.flee"				"* Flee"
+"battle.menu.mercy.reset"				"* Reset"
 "battle.result.won"						"* You WON!&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
 "battle.result.fled.0"					"* Escaped..."
 "battle.result.fled.1"					"* I'm outta here."
@@ -7,3 +9,6 @@
 "battle.result.fled.3"					"* Don't slow me down."
 "battle.result.fled.reward"				"* Ran away with {insert EXP} EXP&  and {insert GOLD} GOLD."
 "battle.result.lv_up"					"* Your LOVE increased."
+
+"battle.inksans.name"				"* Ink!Sans"
+"battle.inksans.act.check.dialog"			"* Ink!Sans - ATK ?? DEF ??{sleep 10}&* Guardian of the Multiverse."

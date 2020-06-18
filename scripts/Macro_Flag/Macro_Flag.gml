@@ -42,6 +42,7 @@ enum FLAG_STATIC{
 
 #region dynamic
 enum FLAG_DYNAMIC{
+	KARMA_ENABLED
 };
 #endregion
 
@@ -56,7 +57,9 @@ enum FLAG_TEMP{
 	TRIGGER_WARP_LANDMARK,
 	TRIGGER_WARP_DIR,
 	TEXT_TYPER_CHOICE,
-	FRAME_SKIP
+	FRAME_SKIP,
+	KARMA,
+	KARMA_TIMER
 };
 #endregion
 

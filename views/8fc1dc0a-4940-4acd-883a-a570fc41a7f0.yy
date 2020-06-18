@@ -7,7 +7,8 @@
         "9db51b0d-5441-40c2-b108-a131fe14ee0f",
         "f7e8ac6f-3e86-4091-b042-c851d89de72f",
         "7b56ec5a-c6db-417b-b24d-5a5c367765b3",
-        "5682f7b0-1c91-47a2-be91-05da69917a5e"
+        "5682f7b0-1c91-47a2-be91-05da69917a5e",
+        "05abd6a5-59f9-4e05-9070-ebfc9d7dd8f5"
     ],
     "filterType": "GMScript",
     "folderName": "Dialog",

@@ -5,7 +5,8 @@
     "name": "7a8ed53a-5e79-4630-b742-7f00991904b9",
     "children": [
         "9846ec9c-25d9-4019-9c7f-a6258aff4f70",
-        "8bf37910-8bc0-4129-b691-4a7c1027b832"
+        "8bf37910-8bc0-4129-b691-4a7c1027b832",
+        "5faabcef-479b-41e6-8ff4-716f959afd36"
     ],
     "filterType": "GMScript",
     "folderName": "Board",
